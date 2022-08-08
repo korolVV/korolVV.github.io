@@ -6,6 +6,6 @@ window.addEventListener("DOMContentLoaded", function () {
     firstName.innerHTML += "<h1>Hello</h1>";
     
     
-    
+    console.log(nameField);
     console.log(firstName);
 });
