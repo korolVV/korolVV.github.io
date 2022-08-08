@@ -1,5 +1,12 @@
 window.addEventListener("DOMContentLoaded", function () {
-alert("Hello");
+	
+	alert("Hello");
+	
+	
+	_document = window.parent.document;
+	let nameField = _document.querySelector('#first_name');
+	
+	console.log(nameField);
 	
 //     let nameFieldChildren = nameField.children;
     
