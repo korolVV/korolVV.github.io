@@ -4,4 +4,8 @@ window.addEventListener("DOMContentLoaded", function () {
     let lastName = nameField.children[3];
     
     firstName.innerHTML += "<h1>Hello</h1>";
+    
+    
+    
+    console.log(firstName);
 });
