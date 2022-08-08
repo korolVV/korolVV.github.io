@@ -8,9 +8,10 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 	console.log(nameField);
 	
-    let nameFieldChildren = nameField.children[2];
+    let nameFieldChildren = nameField.children;
+	
     
-    nameFieldChildren.innerHTML += "<h1>Hello</h1>";
+    nameFieldChildren[2].innerHTML += "<h1>Hello</h1>";
     
     
     console.log(nameField);
