@@ -1,11 +1,10 @@
 window.addEventListener("DOMContentLoaded", function () {
     let nameField = document.querySelector(".name>span");
-    let firstName = nameField.children[2];
-    let lastName = nameField.children[3];
+    let nameFieldChildren = nameField.children;
     
-    firstName.innerHTML += "<h1>Hello</h1>";
+    nameFieldChildren[2].innerHTML += "<h1>Hello</h1>";
     
     
     console.log(nameField);
-    console.log(firstName);
+    console.log(nameFieldChildren);
 });
