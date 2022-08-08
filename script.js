@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-    let nameField = document.querySelector(".name>span");
+    let nameField = document.querySelector(".name");
     console.log(nameField);
 //     let nameFieldChildren = nameField.children;
     
