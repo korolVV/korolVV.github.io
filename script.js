@@ -46,7 +46,7 @@ firstNameInput.addEventListener("input", (e) => {
 // 		span1.style.color = "#9CABC7";
 // 		first_name.style.borderColor = "#9CABC7";
 // 	}
-	});
+	}});
 
 	
 });
