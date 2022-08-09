@@ -38,6 +38,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 
 	countryLi.forEach((item) => {
+	console.log(item);
 	item.addEventListener("click", () => {
 		item.children[2].classList.toggle("checkmark-active");
 		country.classList.add("country-active");
