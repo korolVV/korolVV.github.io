@@ -39,7 +39,6 @@ console.log(firstNameInput);
 
 const firstNameChildren = firstName.children;
 
-
 console.log(firstNameChildren);
 console.log(firstNameChildren[2]);
 	
@@ -49,12 +48,12 @@ firstNameInput.addEventListener("input", (e) => {
 		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		firstNameChildren[1].style.color = "#3478F6";
 		firstNameInput.style.borderColor = "#3478F6";
-// 	} else {
-// 		img1.src = "https://sunbirdapp.com/icons/name.svg";
-// 		span1.style.color = "#9CABC7";
-// 		first_name.style.borderColor = "#9CABC7";
-// 	}
-	}});
+	} else {
+		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name.svg";
+		firstNameChildren[1].style.color = "#9CABC7";
+		firstNameInput.style.borderColor = "#9CABC7";
+	}
+	});
 
 	
 });
