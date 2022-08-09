@@ -48,7 +48,10 @@ window.addEventListener("DOMContentLoaded", function () {
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
 		placeholderChange.style.color = "#26344E";
+		setTimeout(function () {
 		country.children[3].classList.toggle('country-list-active');
+		}, 1000);
+		
 	});
 	});
 
