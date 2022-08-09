@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const country = _document.querySelector('.country');
 	const firstNameInput = _document.querySelector('#first_name');
 	const lastNameInput = _document.querySelector('#last_name');
-	const countryLi = _document.querySelectorAll(".country-list-card");
+	const countryLi = _document.querySelectorAll('.country-list-card');
 
 	const nameFieldChildren = nameField.children;
 
