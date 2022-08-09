@@ -38,7 +38,7 @@ console.log(2+2=4);
 	
 	
 firstNameInput.addEventListener("input", (e) => {
-	if (e.target.value.length >= 1 && firstNameInput.activeElement === false) {
+	if (e.target.value.length >= 1) {
 		firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		firstName.children[1].style.color = "#3478F6";
 		firstNameInput.style.borderColor = "#3478F6";
