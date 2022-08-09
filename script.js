@@ -84,7 +84,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const inputLast = _document.querySelector('#last_name');
 	const placeholderFirst = _document.querySelector('.placeholder-first');
 
-	console.log(firstNameChildren.children[2]);
+	console.log(firstNameChildren);
 
 	inputName.addEventListener("input", (e) => {
 	console.log(e.target.value);
