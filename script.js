@@ -35,6 +35,10 @@ countryField.children[1].style.cssText = 'pointer-events: none;position: absolut
 	
 console.log(firstNameInput.activeElement);
 console.log(firstNameInput);
+	
+
+console.log(firstNameChildren);
+console.log(firstNameChildren[2]);
 
 const firstNameChildren = firstName.children;
 	
