@@ -35,7 +35,12 @@ country.children[0].style.cssText = 'background-image: url(https://sunbirdapp.co
 	
 country.children[3].style.cssText = 'display: none;position: absolute;width: calc(100% + 4px);left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);top: 68px;z-index: 20;max-height: 336px;background: #fff;-webkit-box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);border-radius: 16px;padding: 80px 16px 0';
 	
-country.children[5].style.cssText = 'right: 19px;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s';
+country.children[5].style.cssText = 'position: absolute;right: 19px;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s';
+	
+country.addEventListener('click', () => {
+	country.children[1].style.cssText = '-webkit-transform: translateY(-100%) translateX(-30px);-ms-transform: translateY(-100%) translateX(-30px);transform: translateY(-100%) translateX(-30px);font-weight: 600;font-size: 12px;color: #9cabc7;padding: 0 8px;position: absolute;top: 6px;left: 48px;z-index: 3;background-color: #fff';
+	country.children[3].style.dispay = "flex";	
+});
 
 	
 const countryListSearch = _document.querySelector('.country-list__search');
