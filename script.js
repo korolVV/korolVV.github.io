@@ -57,8 +57,5 @@ let nameFieldChildren = nameField.children;
 nameFieldChildren[2].innerHTML += "<span>First name</span>";
 nameFieldChildren[3].innerHTML += "<span>Last name</span>";
 emailField.innerHTML += "<span>Email</span>";
-
-console.log(nameField);
-console.log(nameFieldChildren);
 	
 });
