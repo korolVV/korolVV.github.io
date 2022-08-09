@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		placeholderChange.style.color = "#26344E";
 		setTimeout(function () {
 		country.children[3].classList.toggle('country-list-active');
-		}, 500);
+		}, 300);
 		
 	
 	});
@@ -80,14 +80,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-	const firstNameInput = _document.querySelector('#first_name');
-	const lastNameInput = _document.querySelector('#last_name');
+	const inputName = _document.querySelector('#first_name');
+	const inputLast = _document.querySelector('#last_name');
 
 
 
-	console.log(firstNameInput);
+	console.log(inputName);
 
-	firstNameInput.addEventListener("change", (e) => {
+	inputName.addEventListener("input", (e) => {
 	console.log(e.target.value);
 	if (e.target.value.length >= 1) {
 		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name-on.svg";
