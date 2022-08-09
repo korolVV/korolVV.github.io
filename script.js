@@ -5,9 +5,6 @@ window.addEventListener("DOMContentLoaded", function () {
 	const nameField = _document.querySelector('.name>span');
 	const emailField = _document.querySelector('.email .form-item');
 	const country = _document.querySelector('.country');
-	const firstNameInput = _document.querySelector('#first_name');
-	const lastNameInput = _document.querySelector('#last_name');
-	const countryLi = _document.querySelectorAll('.country-list-card');
 
 	const nameFieldChildren = nameField.children;
 
@@ -36,6 +33,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	country.children[5].classList.toggle("chevron-active");
 	country.children[3].classList.toggle('country-list-active');	
 	});
+	
+	const countryLi = _document.querySelectorAll('.country-list-card');
 	
 	console.log(countryLi);
 
@@ -73,7 +72,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+	const firstNameInput = _document.querySelector('#first_name');
+	const lastNameInput = _document.querySelector('#last_name');
 
 
 
