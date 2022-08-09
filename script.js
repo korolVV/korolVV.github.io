@@ -38,10 +38,11 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 	const countryLi = _document.querySelectorAll('.country-list-card');
 
-	countryLi.forEach((item, i, arr) => {
+	countryLi.forEach((item, i) => {
 	item.addEventListener("click", () => {
-		arr.children[2].classList.remove("checkmark-active");
+		console.log(item[i]);
 		item.children[2].classList.toggle("checkmark-active");
+		item[!i].children[2].classList.remove("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
 		placeholder.classList.add("country-span-color-active");
