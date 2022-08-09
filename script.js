@@ -33,11 +33,11 @@ emailField.children[1].style.cssText = 'pointer-events: none;position: absolute;
 	
 countryField.children[1].style.cssText = 'pointer-events: none;position: absolute;left: 51px;top: 23px;-webkit-transition: 0.2s;-o-transition: 0.2s;transition: 0.2s;-webkit-transition-timing-function: ease;-o-transition-timing-function: ease;transition-timing-function: ease;-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);-o-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);font-weight: 600;font-size: 16px;line-height: 15px;color: #9cabc7;-webkit-transition: 0.2s all ease-out;-o-transition: 0.2s all ease-out;transition: 0.2s all ease-out';
 	
-console.log(firstNameInput.focused);
+console.log(firstNameInput.is(':focus'));
 	
 	
 firstNameInput.addEventListener("input", (e) => {
-	if (e.target.value.length >= 1 && firstNameInput.focus() == false) {
+	if (e.target.value.length >= 1 && firstNameInput.is(':focus') == false) {
 		firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		firstName.children[1].style.color = "#3478F6";
 		firstNameInput.style.borderColor = "#3478F6";
