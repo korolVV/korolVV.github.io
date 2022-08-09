@@ -11,13 +11,13 @@ window.addEventListener("DOMContentLoaded", function () {
 	const firstName = nameFieldChildren[2];
 	const lastName = nameFieldChildren[3];
 
-	firstName.innerHTML += "<span class=\'placeholder placeholder-first\'>First name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"First name\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
+	firstName.innerHTML += "<span class=\'placeholder\' id=\'placeholder-first\'>First name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"First name\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
 
-	lastName.innerHTML += "<span class=\'placeholder placeholder-last\'>Last name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Last name\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
+	lastName.innerHTML += "<span class=\'placeholder\' id=\'placeholder-last\'>Last name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Last name\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
 
-	emailField.innerHTML += "<span class=\'placeholder placeholder-email\'>Email</span><img src=\"https://sunbirdapp.com/icons/email.svg\" alt=\"Email\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
+	emailField.innerHTML += "<span class=\'placeholder\' id=\'placeholder-email\'>Email</span><img src=\"https://sunbirdapp.com/icons/email.svg\" alt=\"Email\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
 
-	country.innerHTML = "<div class=\"country__img\"></div><span class=\'placeholder placeholder-country\'>Country</span><span class=\"placeholder-change\">Please select...</span><div class=\"country-list\"><div class=\"country-list__search\"><img src=\"https://sunbirdapp.com/icons/search.svg\" alt=\"Search\" /><input type=\"text\" placeholder=\"Primamy Label\" /></div><ul><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/afganistan.svg\" alt=\"afganistan\"/><span>Afganistan</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/albania.svg\" alt=\"albania\" /><span>Albania</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/algeria.svg\" alt=\"algeria\" /><span>Algeria</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/andorra.svg\" alt=\"andorra\" /><span>Andorra</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/angola.svg\" alt=\"angola\" /><span>Angola</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/argentina.svg\" alt=\"argentina\"/><span>Argentina</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/tunisia.svg\" alt=\"tunisia\" /><span>Tunisia</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-arab-emirates.svg\" alt=\"united arab emirates\"/><span>United Arab Emirates</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-kingdom.svg\"alt=\"united kingdom\"/><span>United Kingdom</span><img class=\"checkmark\"src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-states.svg\" alt=\"united states\"/><span>United States</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li></ul></div><div class=\"country-btn\"></div><img class=\"chevron\" src=\"https://sunbirdapp.com/icons/chevron.svg\" alt=\"arrow-down\" />";
+	country.innerHTML = "<div class=\"country__img\"></div><span class=\'placeholder\' id=\'placeholder-country\'>Country</span><span class=\"placeholder-change\">Please select...</span><div class=\"country-list\"><div class=\"country-list__search\"><img src=\"https://sunbirdapp.com/icons/search.svg\" alt=\"Search\" /><input type=\"text\" placeholder=\"Primamy Label\" /></div><ul><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/afganistan.svg\" alt=\"afganistan\"/><span>Afganistan</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/albania.svg\" alt=\"albania\" /><span>Albania</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/algeria.svg\" alt=\"algeria\" /><span>Algeria</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/andorra.svg\" alt=\"andorra\" /><span>Andorra</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/angola.svg\" alt=\"angola\" /><span>Angola</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/argentina.svg\" alt=\"argentina\"/><span>Argentina</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/tunisia.svg\" alt=\"tunisia\" /><span>Tunisia</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-arab-emirates.svg\" alt=\"united arab emirates\"/><span>United Arab Emirates</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-kingdom.svg\"alt=\"united kingdom\"/><span>United Kingdom</span><img class=\"checkmark\"src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-states.svg\" alt=\"united states\"/><span>United States</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li></ul></div><div class=\"country-btn\"></div><img class=\"chevron\" src=\"https://sunbirdapp.com/icons/chevron.svg\" alt=\"arrow-down\" />";
 
 	const countryBtn = _document.querySelector('.country-btn');
 	const countryImg = _document.querySelector('.country__img');
@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 	const inputName = _document.querySelector('#first_name');
-	const placeholderFirst = _document.querySelector('.placeholder-first');
+	const placeholderFirst = _document.querySelector('#placeholder-first');
 
 	inputName.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 	const inputLast = _document.querySelector('#last_name');
-	const placeholderLast = _document.querySelector('.placeholder-last');
+	const placeholderLast = _document.querySelector('#placeholder-last');
 
 	inputLast.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
@@ -113,7 +113,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 	const email = _document.querySelector('#email');
-	const placeholderEmail = _document.querySelector('.placeholder-email');
+	const placeholderEmail = _document.querySelector('#placeholder-email');
 
 	email.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
