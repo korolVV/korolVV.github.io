@@ -35,12 +35,14 @@ countryField.children[1].style.cssText = 'pointer-events: none;position: absolut
 	
 console.log(firstNameInput.activeElement);
 console.log(firstNameInput);
-	
+
+const firstNameChildren = firstName.children;
 	
 firstNameInput.addEventListener("input", (e) => {
 	if (e.target.value.length >= 1) {
-		firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-		firstName.children[1].style.color = "#3478F6";
+		console.log(e.target.value);
+		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name-on.svg";
+		firstNameChildren[1].style.color = "#3478F6";
 		firstNameInput.style.borderColor = "#3478F6";
 // 	} else {
 // 		img1.src = "https://sunbirdapp.com/icons/name.svg";
