@@ -42,7 +42,7 @@ const countryChlidren = country.children;
 	
 console.log(countryChlidren[0]);
 
-countryChildren[0].style.cssText = 'background-image: url(../icons/country.svg);width: 14px;height: 16px';
+countryChildren[0].style.cssText = 'background-image: url(https://sunbirdapp.com/icons/country.svg);width: 14px;height: 16px';
 
 	
 firstNameInput.addEventListener("change", (e) => {
