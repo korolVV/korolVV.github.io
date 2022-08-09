@@ -34,12 +34,11 @@ window.addEventListener("DOMContentLoaded", function () {
 	country.children[3].classList.toggle('country-list-active');	
 	});
 	
-	const countryLi = _document.querySelectorAll('.country-list-card');
 	
-	console.log(countryLi);
+	
+	const countryLi = _document.querySelectorAll('.country-list-card');
 
 	countryLi.forEach((item) => {
-	console.log(item);
 	item.addEventListener("click", () => {
 		item.children[2].classList.toggle("checkmark-active");
 		country.classList.add("country-active");
@@ -49,6 +48,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
 		placeholderChange.style.color = "#26344E";
+		country.children[3].classList.toggle('country-list-active');
 	});
 	});
 
