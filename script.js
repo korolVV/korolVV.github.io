@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	countryLi.forEach((item, i) => {
 	item.addEventListener("click", () => {
 		item.children[2].classList.toggle("checkmark-active");
-		item(!i).children[2].classList.remove("checkmark-active");
+		item[i == !i].children[2].classList.remove("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
 		placeholder.classList.add("country-span-color-active");
