@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	const countryBtn = _document.querySelector('.country-btn');
 	const countryImg = _document.querySelector('.country__img');
-	const placeholder = _document.querySelector('.placeholder');
+	const placeholderCountry = _document.querySelectorAll('.country .placeholder');
 	const placeholderChange = _document.querySelector('.placeholder-change');
 	const countrySearch = _document.querySelector(".country-list__search input");
 
@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		item.children[2].classList.toggle("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
-		placeholder.classList.add("country-span-color-active");
+		placeholderCountry.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
