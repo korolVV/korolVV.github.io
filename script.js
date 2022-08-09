@@ -88,10 +88,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	inputName.addEventListener("input", (e) => {
 	console.log(e.target.value);
-	if (e.target.value.length >= 1) {
+	if (e.target.value.length >= 1 && inputName.activeElement === false) {
 		firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		placeholderFirst.style.color = "#3478F6";
-		inputName.style.borderColor = "#3478F6";
+		inputName.style.borderColor = "#3478F6 !important";
 	} else {
 		firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 		placeholderFirst.style.color = "#9CABC7";
