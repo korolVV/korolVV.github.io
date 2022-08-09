@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 	
 	_document = window.parent.document;
-	let nameField = _document.querySelector('#first_name');
+	let nameField = _document.querySelector('.name>span');
 	
 	console.log(nameField);
 	
