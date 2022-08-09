@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const countryImg = _document.querySelector('.country__img');
 	const placeholder = _document.querySelector('.placeholder');
 	const placeholderChange = _document.querySelector('.placeholder-change');
-	const countrySearch = document.querySelector(".country-list__search input");
+	const countrySearch = _document.querySelector(".country-list__search input");
 
 	countryBtn.addEventListener('click', () => {
 	country.children[1].classList.toggle('country-span-active');
