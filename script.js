@@ -84,18 +84,18 @@ window.addEventListener("DOMContentLoaded", function () {
 	const inputLast = _document.querySelector('#last_name');
 	const placeholderFirst = _document.querySelector('.placeholder-first');
 
-	console.log(firstNameChildren);
+	console.log(firstName);
 
 	inputName.addEventListener("input", (e) => {
 	console.log(e.target.value);
 	if (e.target.value.length >= 1) {
-		firstNameChildren.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
+		firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		placeholderFirst.style.color = "#3478F6";
-		firstNameInput.style.borderColor = "#3478F6";
+		inputName.style.borderColor = "#3478F6";
 	} else {
-		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name.svg";
-		firstNameChildren[1].style.color = "#9CABC7";
-		firstNameInput.style.borderColor = "#9CABC7";
+		firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+		placeholderFirst.style.color = "#9CABC7";
+		inputName.style.borderColor = "#9CABC7";
 	}
 	});
 
