@@ -84,10 +84,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const inputLast = _document.querySelector('#last_name');
 	const placeholderFirst = _document.querySelector('.placeholder-first');
 
-	console.log(firstName);
 
-	inputName.addEventListener("input", (e) => {
-	console.log(e.target.value);
 	if (e.target.value.length >= 1 && inputName.activeElement === false) {
 		firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		placeholderFirst.style.color = "#3478F6";
@@ -97,7 +94,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		placeholderFirst.style.color = "#9CABC7";
 		inputName.style.borderColor = "#9CABC7";
 	}
-	});
+	
 
 
 
