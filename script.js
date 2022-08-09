@@ -36,6 +36,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	country.children[5].classList.toggle("chevron-active");
 	country.children[3].classList.toggle('country-list-active');	
 	});
+	
+	console.log(countryLi);
 
 	countryLi.forEach((item) => {
 	console.log(item);
