@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			if(index !== i){
 				items.children[2].classList.remove("checkmark-active");
 			}
-		}
+		});
 		item.children[2].classList.toggle("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		country.children[3].classList.toggle('country-list-active');
 		}, 500);
 		
-	});
+	
 	});
 
 
