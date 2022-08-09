@@ -14,7 +14,7 @@ const firstName = nameFieldChildren[2];
 const lastName = nameFieldChildren[3];
 
 firstName.innerHTML += "<span>First name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"First name\" />";
-lastName.innerHTML += "<span>Last name</span><img src="\https://sunbirdapp.com/icons/name.svg\" alt=\"Last name\" />";
+lastName.innerHTML += "<span>Last name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Last name\" />";
 emailField.innerHTML += "<span>Email</span><img src=\"https://sunbirdapp.com/icons/email.svg\" alt=\"Email\" />";
 countryField.innerHTML = "<div class="country__img"></div><span>Country</span><span class="placeholder">Please select...</span><div class="country-list"><div class="country-list__search"><img src="icons/search.svg" alt="Search" /><input type="text" placeholder="Primamy Label" /></div>
 <ul>
