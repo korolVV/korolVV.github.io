@@ -11,7 +11,8 @@ window.addEventListener("DOMContentLoaded", function () {
     let nameFieldChildren = nameField.children;
 	
     
-    nameFieldChildren[2].innerHTML += "<h1>Hello</h1>";
+    nameFieldChildren[2].innerHTML += "<span>First name</span>";
+    nameFieldChildren[3].innerHTML += "<span>Last name</span>";
     
     
     console.log(nameField);
