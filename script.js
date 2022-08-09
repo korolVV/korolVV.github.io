@@ -43,7 +43,7 @@ country.addEventListener('click', () => {
 		country.children[2].style.display = "block !important";
 	}, 90);
 	country.children[5].classList.toggle("chevron-active");
-	country.children[3].style.dispay = "flex";	
+	country.children[3].classList.toggle('country-list-active');	
 });
 
 	
