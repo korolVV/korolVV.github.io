@@ -38,7 +38,7 @@ country.children[3].style.cssText = 'display: none;position: absolute;width: cal
 country.children[5].style.cssText = 'position: absolute;right: 19px;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s';
 	
 country.addEventListener('click', () => {
-	country.children[1].classList.toggle('.country-span-active');
+	country.children[1].classList.toggle('country-span-active');
 	country.children[3].style.dispay = "flex";	
 });
 
