@@ -87,11 +87,11 @@ window.addEventListener("DOMContentLoaded", function () {
 		if (e.target.value.length >= 1) {
 			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 			placeholderFirst.style.cssText = "color: #3478F6 !important";
-			inputName.style.borderColor = "#3478F6 !important";
+			inputName.style.cssText = "border-color: #3478F6 !important";
 		} else {
 			firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 			placeholderFirst.style.cssText = "color: #9CABC7 !important";
-			inputName.style.borderColor = "#9CABC7 !important";
+			inputName.style.cssText = "border-color: #9CABC7 !important";
 		}
 	});
 
@@ -102,12 +102,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	inputLast.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-			placeholderLast.style.color = "#3478F6 !important";
-			inputLast.style.borderColor = "#3478F6 !important";
+			placeholderLast.style.cssText = "color: #3478F6 !important";
+			inputLast.style.cssText = "border-color: #3478F6 !important";
 		} else {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
-			placeholderLast.style.color = "#9CABC7 !important";
-			inputLast.style.borderColor = "#9CABC7 !important";
+			placeholderLast.style.cssText = "color: #9CABC7 !important";
+			inputLast.style.cssText = "border-color: #9CABC7 !important";
 		}
 	});
 		
@@ -118,12 +118,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	email.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
-			placeholderEmail.style.color = "#3478F6 !important";
-			email.style.borderColor = "#3478F6 !important";
+			placeholderEmail.style.cssText = "color: #3478F6 !important";
+			email.style.bcssText= "border-color: #3478F6 !important";
 		} else {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
-			placeholderLast.style.color = "#9CABC7 !important";
-			email.style.borderColor = "#9CABC7 !important";
+			placeholderLast.style.cssText = "color: #9CABC7 !important";
+			email.style.cssText = "border-color: #9CABC7 !important";
 		}
 	});
 		
