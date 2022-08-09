@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
 _document = window.parent.document;
 const nameField = _document.querySelector('.name>span');
 const emailField = _document.querySelector('.email .form-item');
+const country = _document.querySelector('.country');
 const countryField = _document.querySelector('.country .form-item');
 const firstNameInput = _document.querySelector('#first_name');
 const lastNameInput = _document.querySelector('#last_name');
@@ -37,9 +38,9 @@ console.log(firstNameInput);
 
 const firstNameChildren = firstName.children;
 
-const countryFieldChlidren = countryField.children;
+const countryChlidren = country.children;
 	
-console.log(countryFieldChildren[0]);
+console.log(countryChlidren[0]);
 
 countryFieldChildren[0].style.cssText = 'background-image: url(../icons/country.svg);width: 14px;height: 16px';
 
