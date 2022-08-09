@@ -21,12 +21,7 @@ emailField.innerHTML += "<span class=\'placeholder\'>Email</span><img src=\"http
 
 country.innerHTML = "<div class=\"country__img\"></div><span class=\'placeholder\'>Country</span><span class=\"placeholder-change\">Please select...</span><div class=\"country-list\"><div class=\"country-list__search\"><img src=\"https://sunbirdapp.com/icons/search.svg\" alt=\"Search\" /><input type=\"text\" placeholder=\"Primamy Label\" /></div><ul><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/afganistan.svg\" alt=\"afganistan\"/><span>Afganistan</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/albania.svg\" alt=\"albania\" /><span>Albania</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/algeria.svg\" alt=\"algeria\" /><span>Algeria</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/andorra.svg\" alt=\"andorra\" /><span>Andorra</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/angola.svg\" alt=\"angola\" /><span>Angola</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/argentina.svg\" alt=\"argentina\"/><span>Argentina</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/tunisia.svg\" alt=\"tunisia\" /><span>Tunisia</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-arab-emirates.svg\" alt=\"united arab emirates\"/><span>United Arab Emirates</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-kingdom.svg\"alt=\"united kingdom\"/><span>United Kingdom</span><img class=\"checkmark\"src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li><li class=\"country-list-card\"><img src=\"https://sunbirdapp.com/icons/flags/united-states.svg\" alt=\"united states\"/><span>United States</span><img class=\"checkmark\" src=\"https://sunbirdapp.com/icons/checkmark.svg\" alt=\"checkmark\"/></li></ul></div><div class=\"country-btn\"></div><img class=\"chevron\" src=\"https://sunbirdapp.com/icons/chevron.svg\" alt=\"arrow-down\" />";
 
-	
-country.children[0].style.cssText = 'background-image: url(https://sunbirdapp.com/icons/country.svg);width: 14px;height: 16px;position: absolute;top: 50%;left: 19px;transform: translateY(-50%)';
-	
-country.children[3].style.cssText = 'display: none;position: absolute;width: calc(100% + 4px);left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);top: 68px;z-index: 20;max-height: 336px;background: #fff;-webkit-box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);border-radius: 16px;padding: 80px 16px 0';
-	
-country.children[5].style.cssText = 'position: absolute;right: 19px;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s';
+
 	
 country.addEventListener('click', () => {
 	country.children[1].classList.toggle('country-span-active');
@@ -37,11 +32,7 @@ country.addEventListener('click', () => {
 	country.children[3].classList.toggle('country-list-active');	
 });
 
-	
-const countryListSearch = _document.querySelector('.country-list__search');
 
-const inputSearch = countryListSearch.children[1];
-inputSearch.style.cssText = "margin:0 0 0 13px;border-bottom:none !important";
 	
 	
 console.log(firstNameInput);
