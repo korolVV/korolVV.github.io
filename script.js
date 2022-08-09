@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	countryLi.forEach((item, i) => {
 	item.addEventListener("click", () => {
-		console.log(item(i));
+		console.log(i);
 		item.children[2].classList.toggle("checkmark-active");
 		(item, !i).children[2].classList.remove("checkmark-active");
 		country.classList.add("country-active");
