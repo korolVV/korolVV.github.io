@@ -7,7 +7,7 @@ _document = window.parent.document;
 const nameField = _document.querySelector('.name>span');
 const emailField = _document.querySelector('.email .form-item');
 const countryField = _document.querySelector('.country .form-item');
-const firstNameInput = _document.querySelector('#first_name');
+const firstNameInput = document.querySelector('#first_name');
 const lastNameInput = _document.querySelector('#last_name');
 
 const nameFieldChildren = nameField.children;
