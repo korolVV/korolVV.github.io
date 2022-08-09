@@ -44,7 +44,7 @@ firstNameInput.addEventListener("input", fucntion(e) {
 		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 		firstNameChildren[1].style.color = "#3478F6";
 		firstNameInput.style.borderColor = "#3478F6";
-		console.log('qwerty');
+		console.log('Works');
 	} else {
 		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name.svg";
 		firstNameChildren[1].style.color = "#9CABC7";
