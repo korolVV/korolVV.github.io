@@ -1,8 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
 	
-	console.log("Hello!!");
-	
-	
+
 _document = window.parent.document;
 const nameField = _document.querySelector('.name>span');
 const emailField = _document.querySelector('.email .form-item');
@@ -34,6 +32,7 @@ emailField.children[1].style.cssText = 'pointer-events: none;position: absolute;
 countryField.children[1].style.cssText = 'pointer-events: none;position: absolute;left: 51px;top: 23px;-webkit-transition: 0.2s;-o-transition: 0.2s;transition: 0.2s;-webkit-transition-timing-function: ease;-o-transition-timing-function: ease;transition-timing-function: ease;-webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);-o-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);font-weight: 600;font-size: 16px;line-height: 15px;color: #9cabc7;-webkit-transition: 0.2s all ease-out;-o-transition: 0.2s all ease-out;transition: 0.2s all ease-out';
 	
 countryField.children[0].style.cssText = 'background-image: url(https://sunbirdapp.com/icons/country.svg);width: 14px;height: 16px';
+countryField.children[3].style.cssText = 'display: none;position: absolute;width: calc(100% + 4px);left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);top: 68px;z-index: 20;max-height: 336px;background: #fff;-webkit-box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);border-radius: 16px;padding: 80px 16px 0';
 	
 console.log(firstNameInput);
 
