@@ -31,7 +31,7 @@ country.children[5].style.cssText = 'position: absolute;right: 19px;-webkit-tran
 country.addEventListener('click', () => {
 	country.children[1].classList.toggle('country-span-active');
 	setTimeout(function () {
-		country.children[2].classList.toggle('placeholder-active');
+		country.children[2].classList.toggle('placeholder-change-active');
 	}, 90);
 	country.children[5].classList.toggle("chevron-active");
 	country.children[3].classList.toggle('country-list-active');	
