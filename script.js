@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
 	
-	alert("Hello");
+	console.log("Hello!!!!!!!!!!!!!!!");
 	
 	
 	_document = window.parent.document;
