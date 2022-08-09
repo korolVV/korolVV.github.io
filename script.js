@@ -81,7 +81,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 	const inputName = _document.querySelector('#first_name');
-	const inputLast = _document.querySelector('#last_name');
 	const placeholderFirst = _document.querySelector('.placeholder-first');
 
 	inputName.addEventListener('input', (e) => {
@@ -97,6 +96,45 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 
 
+	const inputLast = _document.querySelector('#last_name');
+	const placeholderLast = _document.querySelector('.placeholder-last');
 
+	inputLast.addEventListener('input', (e) => {
+		if (e.target.value.length >= 1) {
+			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
+			placeholderLast.style.color = "#3478F6";
+			inputLast.style.borderColor = "#3478F6 !important";
+		} else {
+			lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+			placeholderLast.style.color = "#9CABC7";
+			inputLast.style.borderColor = "#9CABC7";
+		}
+	});
+		
+		
+	const email = _document.querySelector('#email');
+	const placeholderEmail = _document.querySelector('.placeholder-email');
+
+	email.addEventListener('input', (e) => {
+		if (e.target.value.length >= 1) {
+			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
+			placeholderEmail.style.color = "#3478F6";
+			email.style.borderColor = "#3478F6 !important";
+		} else {
+			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
+			placeholderLast.style.color = "#9CABC7";
+			email.style.borderColor = "#9CABC7";
+		}
+	});
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 });
 });
