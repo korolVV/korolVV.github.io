@@ -86,12 +86,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	inputName.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
 			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-			placeholderFirst.style.color = "#3478F6";
+			placeholderFirst.style.color = "#3478F6 !important";
 			inputName.style.borderColor = "#3478F6 !important";
 		} else {
 			firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
-			placeholderFirst.style.color = "#9CABC7";
-			inputName.style.borderColor = "#9CABC7";
+			placeholderFirst.style.color = "#9CABC7 !important";
+			inputName.style.borderColor = "#9CABC7 !important";
 		}
 	});
 
@@ -102,12 +102,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	inputLast.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-			placeholderLast.style.color = "#3478F6";
+			placeholderLast.style.color = "#3478F6 !important";
 			inputLast.style.borderColor = "#3478F6 !important";
 		} else {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
-			placeholderLast.style.color = "#9CABC7";
-			inputLast.style.borderColor = "#9CABC7";
+			placeholderLast.style.color = "#9CABC7 !important";
+			inputLast.style.borderColor = "#9CABC7 !important";
 		}
 	});
 		
@@ -118,12 +118,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	email.addEventListener('input', (e) => {
 		if (e.target.value.length >= 1) {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
-			placeholderEmail.style.color = "#3478F6";
+			placeholderEmail.style.color = "#3478F6 !important";
 			email.style.borderColor = "#3478F6 !important";
 		} else {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
-			placeholderLast.style.color = "#9CABC7";
-			email.style.borderColor = "#9CABC7";
+			placeholderLast.style.color = "#9CABC7 !important";
+			email.style.borderColor = "#9CABC7 !important";
 		}
 	});
 		
