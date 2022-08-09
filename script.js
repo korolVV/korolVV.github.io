@@ -44,7 +44,7 @@ console.log(countryFieldChildren[0]);
 countryFieldChildren[0].style.cssText = 'background-image: url(../icons/country.svg);width: 14px;height: 16px';
 
 	
-firstNameInput.window.parent.addEventListener("change", (e) => {
+firstNameInput.addEventListener("change", (e) => {
 	console.log(e.target.value);
 	if (e.target.value.length >= 1) {
 		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name-on.svg";
