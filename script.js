@@ -33,12 +33,17 @@ countryField.children[1].style.cssText = 'pointer-events: none;position: absolut
 	
 countryField.children[0].style.cssText = 'background-image: url(https://sunbirdapp.com/icons/country.svg);width: 14px;height: 16px';
 countryField.children[3].style.cssText = 'display: none;position: absolute;width: calc(100% + 4px);left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);top: 68px;z-index: 20;max-height: 336px;background: #fff;-webkit-box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);box-shadow: 0 4px 24px rgba(38, 52, 78, 0.16);border-radius: 16px;padding: 80px 16px 0';
+
+	
+const countryListSearch = _document.querySelector('.country-list__search');
+console.log(countryListSearch);
+countryListSearch.style.cssText = 'height: 48px;margin-bottom: 16px;border: 2px #a0abc5 solid;border-radius: 15px;display: -webkit-box;display: -ms-flexbox;display: flex;max-width: 352px;width: 100%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding-left: 19px;z-index: 30;position: absolute;top: 16px;left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%)';
+
+
+	
+	
 	
 console.log(firstNameInput);
-
-
-
-
 	
 firstNameInput.addEventListener("change", (e) => {
 	console.log(e.target.value);
