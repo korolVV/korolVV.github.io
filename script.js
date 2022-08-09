@@ -50,7 +50,8 @@ country.addEventListener('click', () => {
 const countryListSearch = _document.querySelector('.country-list__search');
 countryListSearch.style.cssText = 'height: 48px;margin-bottom: 16px;border: 2px #a0abc5 solid;border-radius: 15px;display: -webkit-box;display: -ms-flexbox;display: flex;max-width: 352px;width: 100%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding-left: 19px;z-index: 30;position: absolute;top: 16px;left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%)';
 
-
+const inputSearch = countryListSearch.children[1];
+console.log(inputSearch);
 	
 	
 console.log(firstNameInput);
