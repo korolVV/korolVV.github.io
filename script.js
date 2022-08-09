@@ -5,6 +5,7 @@ _document = window.parent.document;
 const nameField = _document.querySelector('.name>span');
 const emailField = _document.querySelector('.email .form-item');
 const country = _document.querySelector('.country');
+const countryBtn = _document.querySelector('.country-btn');
 const firstNameInput = _document.querySelector('#first_name');
 const lastNameInput = _document.querySelector('#last_name');
 
@@ -23,7 +24,7 @@ country.innerHTML = "<div class=\"country__img\"></div><span class=\'placeholder
 
 
 	
-country.addEventListener('click', () => {
+countryBtn.addEventListener('click', () => {
 	country.children[1].classList.toggle('country-span-active');
 	setTimeout(function () {
 		country.children[2].classList.toggle('placeholder-change-active');
