@@ -37,12 +37,13 @@ console.log(firstNameInput.activeElement);
 console.log(firstNameInput);
 	
 
+const firstNameChildren = firstName.children;
+
+
 console.log(firstNameChildren);
 console.log(firstNameChildren[2]);
-
-const firstNameChildren = firstName.children;
 	
-firstNameInput.addEventListener("click", (e) => {
+firstNameInput.addEventListener("input", (e) => {
 	console.log(e.target.value);
 	if (e.target.value.length >= 1) {
 		firstNameChildren[2].src = "https://sunbirdapp.com/icons/name-on.svg";
