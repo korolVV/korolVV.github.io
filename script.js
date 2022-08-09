@@ -38,19 +38,20 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 	const countryLi = _document.querySelectorAll('.country-list-card');
 
-	countryLi.forEach((item) => {
+	countryLi.forEach((item, i) => {
 	item.addEventListener("click", () => {
 		item.children[2].classList.toggle("checkmark-active");
+		item[!i].children[2].classList.remove("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
-		placeholderChange.classList.add("country-span-color-active");
+		placeholder.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
 		placeholderChange.style.color = "#26344E";
 		setTimeout(function () {
 		country.children[3].classList.toggle('country-list-active');
-		}, 1000);
+		}, 500);
 		
 	});
 	});
