@@ -37,6 +37,12 @@ console.log(firstNameInput);
 
 const firstNameChildren = firstName.children;
 
+const countryFieldChlidren = countryField.children;
+	
+console.log(countryFieldChildren[0]);
+
+countryFieldChildren[0].style.cssText = 'background-image: url(../icons/country.svg);width: 14px;height: 16px';
+
 	
 firstNameInput.window.parent.addEventListener("change", (e) => {
 	console.log(e.target.value);
