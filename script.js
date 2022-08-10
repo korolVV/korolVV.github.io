@@ -1,13 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () 
-
-
-	_document = window.parent.document;
-			
-	const iframe = _document.querySelector('iframe');
-	console.log(iframe);
-	iframe.style.cssText = height: 100% !important; max-height: 850px !important;
-			
-					
+	_document = window.parent.document;				
 	const nameField = _document.querySelector('.name>span');
 	const emailSpan = _document.querySelector('.email>span');
 	const emailField = _document.querySelector('.email .form-item');
@@ -169,6 +161,8 @@ window.addEventListener("DOMContentLoaded", function ()
 	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
 	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 	
-	
+	const iframe = _document.querySelector('iframe');
+	console.log(iframe);
+	iframe.style.cssText = height: 100% !important; max-height: 850px !important;
 	
 });
