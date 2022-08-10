@@ -144,7 +144,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	
 	referralInput.addEventListener('blur', () => {
-		if (referralEmail.value.length >= 1) {
+		if (referralInput.value.length >= 1) {
 			referralImg.src = 'https://sunbirdapp.com/icons/name-on.svg';
 			placeholderReferral.style.cssText = "color: #3478F6 !important";
 			referralInput.style.cssText= "border-color: #3478F6 !important";
