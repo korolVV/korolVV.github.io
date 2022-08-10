@@ -141,9 +141,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
 	const referralImg = _document.querySelector('.referral-img');
-	referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name.svg)';
-	referralImg.style.width = '14px';
-	referralImg.style.height = '16px';
+	
 		
 	referralInput.addEventListener('blur', () => {
 		if (referralInput.value.length >= 1) {
