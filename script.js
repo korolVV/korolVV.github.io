@@ -135,8 +135,9 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 		
-		
-		
+	const referralEmail = _document.querySelector('#referral_email');
+	
+	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span>';
 		
 		
 });
