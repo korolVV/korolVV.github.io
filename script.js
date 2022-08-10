@@ -157,7 +157,17 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 		
+	const alert = _document.querySelector('.invalid-email');
 	
+	const submitRefer = _document.querySelector('.submit-refer-friend');
+	
+	submitRefer.addEventListener('click', () => {
+		if(alert.classList.contains('hide')){
+			referralEmail.style.cssText = 'height: auto'	
+		} else {
+			referralEmail.style.cssText = 'height: 166px;'	
+		}
+	});
 	
 	
 	
