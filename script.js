@@ -1,5 +1,6 @@
-window.addEventListener("DOMContentLoaded", function () 
+window.addEventListener("DOMContentLoaded", function () {
 	_document = window.parent.document;
+	
 	const nameField = _document.querySelector('.name>span');
 	const emailSpan = _document.querySelector('.email>span');
 	const emailField = _document.querySelector('.email .form-item');
