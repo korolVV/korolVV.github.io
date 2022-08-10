@@ -140,17 +140,15 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
+	console.log(placeholderReferral);
 	const referralImg = _document.querySelector('#referral_email img');
 		
 	referralInput.addEventListener('blur', () => {
-		console.log('hello');
 		if (referralInput.value.length >= 1) {
-			console.log('hello!');
 			referralImg.src = 'https://sunbirdapp.com/icons/name-on.svg';
 			placeholderReferral.style.cssText = "color: #3478F6 !important";
 			referralInput.style.cssText= "border-color: #3478F6 !important";
 		} else {
-			console.log('bye');
 			referralImg.src = "https://sunbirdapp.com/icons/name.svg";
 			placeholderReferral.style.cssText = "color: #9CABC7 !important";
 			referralInput.style.cssText = "border-color: #9CABC7 !important";
