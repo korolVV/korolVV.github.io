@@ -164,6 +164,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	const iframe = _document.querySelector('iframe');
 	console.log(iframe);
-	iframe.style.cssText = height: 100% !important; max-height: 850px !important;
+	iframe.style.cssText = 'height: 100% !important;max-height: 850px !important';
 	
 });
