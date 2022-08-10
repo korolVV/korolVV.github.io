@@ -152,9 +152,22 @@ window.addEventListener("DOMContentLoaded", function () {
 			placeholderReferral.style.cssText = "color: #9CABC7 !important";
 			referralInput.style.cssText = "border-color: #9CABC7 !important";
 		}
+	});
+	
+	const errorMessage = _document.querySelector(".error-message");
+		
+	referralInput.addEventListener("invalid", (e) => {
+	e.preventDefault();
+	errorMessage.style.cssText = "display: flex";
+// 	nameSvg.classList.remove("name-on");
+// 	nameSvg.classList.add("name-red");
+	referralInput.style.cssText = "border-color: #e74e4e !important";
+	placeholderReferral.style.cssText = "color: #e74e4e !important";
+	setTimeout(() => {
+		errorMessage.style.cssText = "display: none";
+// 		referForm.style.height = "auto";
+	}, 3000);
 	});	
-		
-		
 		
 	
 	
