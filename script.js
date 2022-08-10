@@ -156,7 +156,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 	
 		
-	nameField.innerHTML = '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong name format</div>';
+	nameField.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong name format</div>';
 	
 	
 	
