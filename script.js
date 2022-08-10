@@ -115,7 +115,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	const email = _document.querySelector('#email');
 	const placeholderEmail = _document.querySelector('#placeholder-email');
 
-	email.addEventListener('input', () => {
+	email.addEventListener('blur', () => {
 		if (email.value.length >= 1) {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
 			placeholderEmail.style.cssText = "color: #3478F6 !important";
