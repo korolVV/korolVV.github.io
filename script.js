@@ -83,8 +83,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	const inputName = _document.querySelector('#first_name');
 	const placeholderFirst = _document.querySelector('#placeholder-first');
 
-	inputName.addEventListener('input', (e) => {
-		if (e.target.value.length >= 1) {
+	inputName.addEventListener('blur', (e) => {
+		if (e.value.length >= 1) {
 			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 			placeholderFirst.style.cssText = "color: #3478F6 !important";
 			inputName.style.cssText = "border-color: #3478F6 !important";
