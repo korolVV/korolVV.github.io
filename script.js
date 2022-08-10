@@ -38,28 +38,28 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 	const countryLi = _document.querySelectorAll('.country-list-card');
 
-// 	countryLi.forEach((item, i) => {
-// 	item.addEventListener("click", () => {
-// 		countryLi.forEach((items, index) => {
-// 			if(index !== i){
-// 				items.children[2].classList.remove("checkmark-active");
-// 			}
-// 		});
-// 		item.children[2].classList.toggle("checkmark-active");
-// 		country.classList.add("country-active");
-// 		countryImg.classList.add("country-img-active");
-// 		country.children[5].classList.toggle("chevron-active");
-// 		placeholderCountry.classList.add("country-span-color-active");
-// 		placeholderChange.textContent = item.children[1].textContent;
-// 		placeholderChange.style.fontWeight = "600";
-// 		placeholderChange.style.fontSize = "16px";
-// 		placeholderChange.style.color = "#26344E";
-// 		setTimeout(function () {
-// 		country.children[3].classList.toggle('country-list-active');
-// 		}, 300);
+	countryLi.forEach((item, i) => {
+	item.addEventListener("click", () => {
+		countryLi.forEach((items, index) => {
+			if(index !== i){
+				items.children[2].classList.remove("checkmark-active");
+			}
+		});
+		item.children[2].classList.toggle("checkmark-active");
+		country.classList.add("country-active");
+		countryImg.classList.add("country-img-active");
+		country.children[5].classList.toggle("chevron-active");
+		placeholderCountry.classList.add("country-span-color-active");
+		placeholderChange.textContent = item.children[1].textContent;
+		placeholderChange.style.fontWeight = "600";
+		placeholderChange.style.fontSize = "16px";
+		placeholderChange.style.color = "#26344E";
+		setTimeout(function () {
+		country.children[3].classList.toggle('country-list-active');
+		}, 300);
 		
 	
-// 	});
+	});
 
 
 	// Search
