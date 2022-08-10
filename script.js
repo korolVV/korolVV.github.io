@@ -145,29 +145,15 @@ window.addEventListener("DOMContentLoaded", function () {
 	referralInput.addEventListener('blur', () => {
 		if (referralInput.value.length >= 1) {
 			referralImg.src = 'https://sunbirdapp.com/icons/name-on.svg';
-			placeholderReferral.style.cssText = "color: #3478F6 !important";
-			referralInput.style.cssText= "border-color: #3478F6 !important";
+			placeholderReferral.style.cssText = "color: #3478F6";
+			referralInput.style.cssText= "border-color: #3478F6";
 		} else {
 			referralImg.src = "https://sunbirdapp.com/icons/name.svg";
-			placeholderReferral.style.cssText = "color: #9CABC7 !important";
-			referralInput.style.cssText = "border-color: #9CABC7 !important";
+			placeholderReferral.style.cssText = "color: #9CABC7";
+			referralInput.style.cssText = "border-color: #9CABC7";
 		}
 	});
 	
-	const errorMessage = _document.querySelector(".error-message");
-		
-	referralInput.addEventListener("invalid", (e) => {
-	e.preventDefault();
-	errorMessage.style.cssText = "display: flex";
-// 	nameSvg.classList.remove("name-on");
-// 	nameSvg.classList.add("name-red");
-	referralInput.style.cssText = "border-color: #e74e4e !important";
-	placeholderReferral.style.cssText = "color: #e74e4e !important";
-	setTimeout(() => {
-		errorMessage.style.cssText = "display: none";
-// 		referForm.style.height = "auto";
-	}, 3000);
-	});	
 		
 	
 	
