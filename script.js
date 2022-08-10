@@ -136,15 +136,18 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 	const referralEmail = _document.querySelector('#referral_email');
-	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Email\" /><div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
+	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><span class=\"referral-img\"></span><div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
 		
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
-	const referralImg = _document.querySelector('#referral_email img');
+	const referralImg = _document.querySelector('.referral-img');
+	referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name.svg)';
+	referralImg.style.width = '14px';
+	referralImg.style.height = '16px';
 		
 	referralInput.addEventListener('blur', () => {
 		if (referralInput.value.length >= 1) {
-			referralImg.src = 'https://sunbirdapp.com/icons/name-on.svg';
+			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-on.svg)';
 			placeholderReferral.style.cssText = "color: #3478F6";
 			referralInput.style.cssText= "border-color: #3478F6";
 		} else {
