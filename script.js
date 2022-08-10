@@ -136,12 +136,14 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 	const referralEmail = _document.querySelector('#referral_email');
-	const referralInput = _document.querySelector('#referral_email input');
 	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Email\" />';
-	
+		
+	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
 	const referralImg = _document.querySelector('#referral_email img');
 
+	console.log(placeholderReferral);
+		
 	referralInput.addEventListener('click', () => {
 		console.log('hello');
 		if (referralInput.value.length >= 1) {
