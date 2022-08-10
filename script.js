@@ -119,7 +119,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		if (e.target.value.length >= 1) {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
 			placeholderEmail.style.cssText = "color: #3478F6 !important";
-			email.style.bcssText= "border-color: #3478F6 !important";
+			email.style.cssText= "border-color: #3478F6 !important";
 		} else {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
 			placeholderLast.style.cssText = "color: #9CABC7 !important";
