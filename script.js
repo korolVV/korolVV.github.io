@@ -161,8 +161,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	nameField.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong name format</div>';
 	emailSpan.children[0].remove();
 	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
-	checkbox.children[0].remove();
-	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
+	checkbox1.children[0].remove();
+	checkbox1.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 	
 	
 	
