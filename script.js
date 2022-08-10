@@ -58,25 +58,25 @@ window.addEventListener("DOMContentLoaded", function () {
 		country.children[3].classList.toggle('country-list-active');
 		}, 300);
 		
-	
+	});
 	});
 
 
-	// Search
+// 	Search
 
-// 	countrySearch.addEventListener("input", (e) => {
-// 	countryLi.forEach((item) => {
-// 		if (e.target.value.length > 0) {
-// 			if (item.children[1].textContent.includes(e.target.value)) {
-// 				item.style.display = "flex";
-// 			} else {
-// 				item.style.display = "none";
-// 			}
-// 		} else {
-// 			item.style.display = "flex";
-// 		}
-// 	});
-// 	});	
+	countrySearch.addEventListener("input", (e) => {
+	countryLi.forEach((item) => {
+		if (e.target.value.length > 0) {
+			if (item.children[1].textContent.includes(e.target.value)) {
+				item.style.display = "flex";
+			} else {
+				item.style.display = "none";
+			}
+		} else {
+			item.style.display = "flex";
+		}
+	});
+	});	
 
 
 
