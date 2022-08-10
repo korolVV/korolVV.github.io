@@ -141,10 +141,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
 	const referralImg = _document.querySelector('#referral_email img');
-
-	console.log(placeholderReferral);
 		
-	referralInput.addEventListener('click', () => {
+	referralInput.addEventListener('blur', () => {
 		console.log('hello');
 		if (referralInput.value.length >= 1) {
 			console.log('hello!');
