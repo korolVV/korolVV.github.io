@@ -1,7 +1,13 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function () 
 
 
 	_document = window.parent.document;
+			
+	const iframe = _document.querySelector('iframe');
+	console.log(iframe);
+	iframe.style.cssText = height: 100% !important; max-height: 850px !important;
+			
+					
 	const nameField = _document.querySelector('.name>span');
 	const emailSpan = _document.querySelector('.email>span');
 	const emailField = _document.querySelector('.email .form-item');
