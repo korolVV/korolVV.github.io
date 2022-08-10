@@ -99,8 +99,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	const inputLast = _document.querySelector('#last_name');
 	const placeholderLast = _document.querySelector('#placeholder-last');
 
-	inputLast.addEventListener('input', (e) => {
-		if (e.target.value.length >= 1) {
+	inputLast.addEventListener('blur', () => {
+		if (inputLast.value.length >= 1) {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 			placeholderLast.style.cssText = "color: #3478F6 !important";
 			inputLast.style.cssText = "border-color: #3478F6 !important";
@@ -115,8 +115,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	const email = _document.querySelector('#email');
 	const placeholderEmail = _document.querySelector('#placeholder-email');
 
-	email.addEventListener('input', (e) => {
-		if (e.target.value.length >= 1) {
+	email.addEventListener('input', () => {
+		if (email.value.length >= 1) {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
 			placeholderEmail.style.cssText = "color: #3478F6 !important";
 			email.style.cssText= "border-color: #3478F6 !important";
