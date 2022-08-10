@@ -129,7 +129,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	});
 		
 		
-	let extra = _document.querySelector('.extra');
+	let extra = _document.querySelector('.actions ul li');
 		
 	extra.innerHTML += <img src=\"https://sunbirdapp.com/icons/email.svg\" alt=\"Email\">
 		
