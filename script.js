@@ -136,11 +136,10 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 	const referralEmail = _document.querySelector('#referral_email');
-	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Email\" />';
+	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"Email\" /><div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
 		
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
-	console.log(placeholderReferral);
 	const referralImg = _document.querySelector('#referral_email img');
 		
 	referralInput.addEventListener('blur', () => {
@@ -157,17 +156,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 		
 		
-	const alert = _document.querySelector('.invalid-email');
 	
-	const submitRefer = _document.querySelector('.submit-refer-friend');
-	
-	submitRefer.addEventListener('click', () => {
-		if(alert.classList.contains('hide')){
-			referralEmail.style.cssText = 'height: auto'	
-		} else {
-			referralEmail.style.cssText = 'height: 166px;'	
-		}
-	});
 	
 	
 	
