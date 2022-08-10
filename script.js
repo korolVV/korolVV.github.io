@@ -133,6 +133,11 @@ window.addEventListener("DOMContentLoaded", function () {
 		
 	extra.innerHTML += '<img src=\"https://sunbirdapp.com/icons/email.svg\" alt=\"Email\" />';
 		
+	const actionsLi = _document.querySelector('.actions ul li');
+	if(actionsLi.classList.contains('selected')){
+		extra.children[3].src = 'https://sunbirdapp.com/icons/email-white.svg'	
+	}
+		
 		
 		
 		
