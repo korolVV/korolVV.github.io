@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 	_document = window.parent.document;
 	const nameField = _document.querySelector('.name>span');
+	const emailSpan = _document.querySelector('.email>span');
 	const emailField = _document.querySelector('.email .form-item');
 	const country = _document.querySelector('.country');
 
@@ -157,6 +158,9 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 		
 	nameField.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong name format</div>';
+	console.log(emailSpan.children[0]);
+	emailSpan.children[0].remove();
+	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong name format</div>';
 	
 	
 	
