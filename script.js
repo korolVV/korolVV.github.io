@@ -161,9 +161,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	emailSpan.children[0].remove();
 	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
 	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
-	
-	const iframe = _document.querySelector('.vs_widget_frame_vs');
-	console.log(iframe);
-	iframe.style.cssText = 'height: 100% !important;max-height: 850px !important';
+
 	
 });
