@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		item.children[2].classList.toggle("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
+		country.children[5].classList.toggle("chevron-active");
 		placeholderCountry.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
