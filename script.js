@@ -5,7 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	const emailSpan = _document.querySelector('.email>span');
 	const emailField = _document.querySelector('.email .form-item');
 	const country = _document.querySelector('.country');
-	const countryItem = _document.querySelector('.country .form-item');
+	const countryItem = _document.querySelector('.country > span:first-child');
+	console.log(countryItem);
 	const checkbox = _document.querySelector('.checkbox>span');
 
 	const nameFieldChildren = nameField.children;
