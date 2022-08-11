@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
 				items.children[2].classList.remove("checkmark-active");
 			}
 		});
-		item.children[2].classList.toggle("checkmark-active");
+		item.children[2].classList.add("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
 		country.children[5].classList.toggle("chevron-active");
