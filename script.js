@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	countrySearch.addEventListener("input", (e) => {
 	countryLi.forEach((item) => {
 		if (e.target.value.length > 0) {
-			if (item.children[1].textContent.includes(e.target.value)) {
+			if (item.children[1].textContent.toLowerCase().includes(e.target.value)) {
 				item.style.display = "flex";
 			} else {
 				item.style.display = "none";
