@@ -24,18 +24,23 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	
 	const divError2 = divError.cloneNode();
-	divError2.appendChild(disclaimer);
-	divError2.appendChild(errorMessage);
+	const errorMessage2 = errorMessage.cloneNode();
+	const disclaimer2 = disclaimer.cloneNode();
+	divError2.appendChild(disclaimer2);
+	divError2.appendChild(errorMessage2);
 	
 	const divError3 = divError.cloneNode();
-	divError3.appendChild(disclaimer);
-	divError3.appendChild(errorMessage);
+	const errorMessage3 = errorMessage.cloneNode();
+	const disclaimer3 = disclaimer.cloneNode();
+	divError3.appendChild(disclaimer3);
+	divError3.appendChild(errorMessage3);
 	
 	const divError4 = divError.cloneNode();
-	divError4.appendChild(disclaimer);
-	divError4.appendChild(errorMessage);
+	const errorMessage4 = errorMessage.cloneNode();
+	const disclaimer4 = disclaimer.cloneNode();
+	divError4.appendChild(disclaimer4);
+	divError4.appendChild(errorMessage4);
 	
-	console.log(divError4);
 	
     	nameField.appendChild(divError);
 	emailSpan.appendChild(divError2);
