@@ -22,6 +22,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	divError.appendChild(disclaimer);
 	divError.appendChild(errorMessage);
 	
+	const divError2 = divError.cloneNode();
+	
+	console.log(divError2);
+	
     	nameField.appendChild(divError);
 	emailSpan.appendChild(divError);
 	
