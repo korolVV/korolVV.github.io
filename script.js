@@ -40,15 +40,15 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	const countryOptions = _document.querySelectorAll('.country option');
-	
-	countryOptions.forEach(item => {
-		console.log(item.value);
-	})
-	
+			countryOptions.forEach(option => {
+			console.log(option.value);
+		})
+	console.log(-------------------------------------------------)
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
 	countryLi.forEach((item, i) => {
-	item.addEventListener("click", () => {
+		console.log(item);
+		item.addEventListener("click", () => {
 		countryLi.forEach((items, index) => {
 			if(index !== i){
 				items.children[2].classList.remove("checkmark-active");
@@ -66,6 +66,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		setTimeout(function () {
 		country.children[3].classList.toggle('country-list-active');
 		}, 300);
+		
 		
 	});
 	});
