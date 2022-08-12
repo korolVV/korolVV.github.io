@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		country.children[6].classList.toggle("chevron-active");
 		placeholderCountry.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
-			console.log(placeholderChange);
+			console.log(placeholderChange.textContent);
 			console.log(item);
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
