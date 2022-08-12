@@ -196,11 +196,11 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	referralInput.addEventListener('blur', () => {
 		if (referralInput.value.length >= 1) {
-			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-on.svg)';
+			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-on.svg) !important';
 			placeholderReferral.style.cssText = "color: #3478F6";
 			referralInput.style.cssText= "border-color: #3478F6";
 		} else {
-			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name.svg)';
+			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name.svg) !important';
 			placeholderReferral.style.cssText= "color: #9CABC7";
 			referralInput.style.cssText = "border-color: #9CABC7";
 		}
