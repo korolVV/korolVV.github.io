@@ -97,7 +97,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	console.log(inputName);
 	
-	inputName.addEventListener('click', function() {
+	inputName.addEventListener('click', () => {
+		console.log(inputName);
 		console.log('Hello');
 		if (inputName.value.length >= 1) {
 			console.log('Bye');
@@ -111,6 +112,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	console.log(inputName);
 
 	const inputLast = _document.querySelector('#last_name');
 	const placeholderLast = _document.querySelector('#placeholder-last');
