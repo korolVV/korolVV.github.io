@@ -214,6 +214,21 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	
+	const sendBtn = _document.querySelector('.submit-refer-friend');
+	const invalidEmail = _document.querySelector('.invalid-email');
+	
+	sendBtn.addEventListener('click', () => {
+		if(invalidEmail.classList.contains('hide')){
+			placeholderReferral.style.cssText= "color: #9CABC7";
+		} else {
+			setTimeout(function () {
+				placeholderReferral.style.cssText= "color: #e74e4e";
+			}, 300);
+		}
+	});
+
+	
+	
 	
 	
 });
