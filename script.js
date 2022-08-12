@@ -179,4 +179,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	d.id = dId;
 
 	d.innerHTML = `<div id=${d.id}></div>`;
+	
+	console.log(d);
+	
+	country.innerHTML += d;
 });
