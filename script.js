@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	divError.appendChild(disclaimer);
 	divError.appendChild(errorMessage);
 	
-    	nameField.insertBefore(divError, nameField.lastElementChild);
+    nameField.insertBefore(divError, nameField.lastElementChild);
 	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
 	countrySpan.insertBefore(divError, countrySpan.lastElementChild);
 	checkbox.insertBefore(divError, checkbox.lastElementChild);
@@ -39,6 +39,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	countrySpan.children[0].style.cssText = 'width: 0 !important;height: 0 !important;opacity: 0 !important;appearance: none !important';
 	countrySpan.children[1].style.cssText = 'width: 0 !important;height: 0 !important;opacity: 0 !important;appearance: none !important';
+	
+	console.log(countrySpan.children[0]);
 
 
 
@@ -121,7 +123,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderFirst.style.cssText = "color: #3478F6 !important";
 			inputName.style.cssText = "border-color: #3478F6 !important";
 		} else {
-			inputName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+			firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 			placeholderFirst.style.cssText = "color: #9CABC7 !important";
 			inputName.style.cssText = "border-color: #9CABC7 !important";
 		}
