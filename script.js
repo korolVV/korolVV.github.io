@@ -40,7 +40,11 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	const countryOptions = _document.querySelectorAll('.country option');
-	console.log(countryOptions);
+	
+	countryOptions.forEach(item () =>{
+		console.log(item.value);
+	})
+	
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
 	countryLi.forEach((item, i) => {
