@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
 	countryLi.forEach((item, i) => {
-		console.log(item);
+		console.log(item.textContent);
 		item.addEventListener("click", () => {
 		countryLi.forEach((items, index) => {
 			if(index !== i){
