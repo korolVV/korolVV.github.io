@@ -22,6 +22,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	divError.appendChild(disclaimer);
 	divError.appendChild(errorMessage);
 	
+	divError = divError;
+	
 	const divError2 = divError.cloneNode();
 	
 	console.log(divError2);
