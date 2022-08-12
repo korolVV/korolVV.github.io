@@ -217,6 +217,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	const sendBtn = _document.querySelector('.submit-refer-friend');
 	const invalidEmail = _document.querySelector('.invalid-email');
 	
+	console.log(invalidEmail);
+	
 	sendBtn.addEventListener('click', () => {
 		if(invalidEmail.classList.contains('hide')){
 			placeholderReferral.style.cssText= "color: #9CABC7";
