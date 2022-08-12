@@ -96,7 +96,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	const placeholderFirst = _document.querySelector('#placeholder-first');
 
 	console.log(inputName);
-	inputName.addEventListener('click', () => {
+	
+	inputName.addEventListener('click', function() {
 		console.log('Hello');
 		if (inputName.value.length >= 1) {
 			console.log('Bye');
@@ -177,5 +178,5 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	
 
-	
+});	
 });
