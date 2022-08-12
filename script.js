@@ -30,9 +30,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countrySearch = _document.querySelector(".country-list__search input");
 
 	countryBtn.addEventListener('click', () => {
-		country.children[3].classList.toggle('country-span-active');
+		country.children[2].classList.toggle('country-span-active');
 		setTimeout(function () {
-			country.children[2].classList.toggle('placeholder-change-active');
+			country.children[3].classList.toggle('placeholder-change-active');
 		}, 90);
 		country.children[6].classList.toggle("chevron-active");
 		country.children[4].classList.toggle('country-list-active');	
