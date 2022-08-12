@@ -22,9 +22,13 @@ window.addEventListener("DOMContentLoaded", () => {
 	divError.appendChild(disclaimer);
 	divError.appendChild(errorMessage);
 	
-    	nameField.insertBefore(divError, nameField.lastElementChild);
+    	nameField.appendChild(divError);
+	emailSpan.appendChild(divError);
 	
- 	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
+// 	nameField.appendChild(divError);
+// 	nameField.appendChild(divError);
+	
+//  	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
 	
 // 	countrySpan.insertBefore(divError, countrySpan.lastElementChild);
 	
