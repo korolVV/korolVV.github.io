@@ -128,7 +128,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			email.style.cssText = "border-color: #3478F6 !important";
 		} else {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
-			placeholderLast.style.cssText = "color: #9CABC7 !important";
+			placeholderEmail.style.cssText = "color: #9CABC7 !important";
 			email.style.cssText = "border-color: #9CABC7 !important";
 		}
 	});
