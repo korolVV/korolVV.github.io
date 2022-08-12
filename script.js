@@ -225,7 +225,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderReferral.style.cssText= "color: #e74e4e";
 			referralInput.style.cssText = "border-color: #e74e4e";
 			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
-			setTimeout(function () {return false; console.log('Hello')}, 2000);
+			setTimeout(function () {console.log('Hello'); return false;}, 2000);
 		}
 		}, 100);
 	});
