@@ -92,10 +92,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-	const inputName = _document.querySelector('#first_name');
+	const inputName = _document.querySelector('.name input');
 	const placeholderFirst = _document.querySelector('#placeholder-first');
 
-	inputName.addEventListener('click', () => {
+	console.log(firstName.children[0]);	
+	
+	firstName.children[0].addEventListener('click', () => {
 		e.preventDefault();
 		alert('Hello');
 	});
