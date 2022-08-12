@@ -175,10 +175,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	
 	let dId = "vsscript_";
-	d = _document.createElement("div");
+	let d = _document.createElement("div");
 	d.id = dId;
 
-	block = _document.createElement("div");
+	let block = _document.createElement("div");
 	block.innerHTML = d;
 	
 	console.log(block);
