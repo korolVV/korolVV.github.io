@@ -207,6 +207,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	
+	const joinBtn = _document.querySelector('.promotion .enter_sweeps');
+	
+	joinBtn.addEventListener('click', () => {
+			country.style.marginBottom = '36px';
+	});
+	
 	
 	
 	
