@@ -97,9 +97,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	console.log(inputName);
 	inputName.addEventListener('click', () => {
-		console.log('Hello')
+		console.log('Hello');
 		if (inputName.value.length >= 1) {
-			console.log('Bye')
+			console.log('Bye');
 			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 			placeholderFirst.style.cssText = "color: #3478F6 !important";
 			inputName.style.cssText = "border-color: #3478F6 !important";
