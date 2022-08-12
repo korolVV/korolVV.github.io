@@ -175,12 +175,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	
 	let dId = "vsscript_";
-	let d = _document.createElement("div");
+	let block = _document.createElement("div");
 	d.id = dId;
 
-	d.innerHTML = `<div id=${d.id}></div>`;
+	block.innerHTML = `<div id=${d.id}></div>`;
 	
-	console.log(d);
+	console.log(block);
 	
-	country.innerHTML += d;
+	country.innerHTML += block;
 });
