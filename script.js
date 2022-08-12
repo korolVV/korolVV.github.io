@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countrySpan = _document.querySelector('.country>span');
 	const checkbox = _document.querySelector('.checkbox>span');
 	
+	emailSpan.children[0].remove();
 	countrySpan.children[0].style.cssText = 'width: 0 !important;height: 0 !important;opacity: 0 !important;appearance: none !important';
 	countrySpan.children[1].style.cssText = 'width: 0 !important;height: 0 !important;opacity: 0 !important;appearance: none !important';
 
