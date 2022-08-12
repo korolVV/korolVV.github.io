@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	console.log(firstName.children[0]);	
 	
-	firstName.children[0].addEventListener('click', () => {
+	firstName.addEventListener('click', () => {
 		console.log('Hello');
 	});
 	
