@@ -23,8 +23,11 @@ window.addEventListener("DOMContentLoaded", () => {
 	divError.appendChild(errorMessage);
 	
     	nameField.insertBefore(divError, nameField.lastElementChild);
-// 	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
+	
+ 	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
+	
 // 	countrySpan.insertBefore(divError, countrySpan.lastElementChild);
+	
 // 	checkbox.insertBefore(divError, checkbox.lastElementChild);
 	
 	
