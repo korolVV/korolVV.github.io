@@ -133,6 +133,15 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 	
+	
+	let extra = _document.querySelector(".extra");
 
+	extra.innerHTML += "<img/>";
+
+	const referralEmail = _document.querySelector("#referral_email");
+	referralEmail.innerHTML +=
+		'<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><span class="referral-img"></span><div class="error-message"><img src="https://sunbirdapp.com/icons/disclaimer.svg" alt="error message" />Wrong email format</div>';
+	
+	
 	
 });
