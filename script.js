@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	const countryOptions = _document.querySelectorAll('.country option');
 	
-	countryOptions.forEach(item () =>{
+	countryOptions.forEach(item => {
 		console.log(item.value);
 	})
 	
