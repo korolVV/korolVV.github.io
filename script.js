@@ -30,12 +30,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countrySearch = _document.querySelector(".country-list__search input");
 
 	countryBtn.addEventListener('click', () => {
-	country.children[2].classList.toggle('country-span-active');
-	setTimeout(function () {
-		country.children[2].classList.toggle('placeholder-change-active');
-	}, 90);
-	country.children[6].classList.toggle("chevron-active");
-	country.children[4].classList.toggle('country-list-active');	
+		country.children[3].classList.toggle('country-span-active');
+		setTimeout(function () {
+			country.children[2].classList.toggle('placeholder-change-active');
+		}, 90);
+		country.children[6].classList.toggle("chevron-active");
+		country.children[4].classList.toggle('country-list-active');	
 	});
 	
 	
@@ -56,8 +56,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		country.children[6].classList.toggle("chevron-active");
 		placeholderCountry.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
-			console.log(placeholderChange.textContent);
-			console.log(item);
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
 		placeholderChange.style.color = "#26344E";
