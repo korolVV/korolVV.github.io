@@ -24,8 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
         
         let divError = _document.createElement('div');
 	divError.classList.add('error-message');
-	divError.textContent = 'Wrong name format';
-	divError.innerHTMl += '<img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />';
+	divError.innerHTMl += '<img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />"Wrong name format"';
         insertAfter(divError, nameField.lastElementChild);
 	
 	
