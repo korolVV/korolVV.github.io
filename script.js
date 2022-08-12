@@ -63,10 +63,10 @@ window.addEventListener("DOMContentLoaded", () => {
 		country.children[4].classList.toggle('country-list-active');
 		}, 300);
 			
-		countryOptions.forEach(option => {
-			if(option.value === item.textContent){
-				option.setAttribute('selected', 'selected');
-			};
+		countryOptions.forEach((option) => {
+			if (option.value === item.textContent) {
+				option.setAttribute("selected", "selected");
+			}
 		});
 
 	});
