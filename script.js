@@ -56,13 +56,21 @@ window.addEventListener("DOMContentLoaded", () => {
 		country.children[6].classList.toggle("chevron-active");
 		placeholderCountry.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
+			console.log(placeholderChange);
+			console.log(item);
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
 		placeholderChange.style.color = "#26344E";
 		setTimeout(function () {
 		country.children[4].classList.toggle('country-list-active');
 		}, 300);
-		
+			
+		countryOptions.forEach(option => {
+			if(option.value === item.textContent){
+				option.click();
+				console.log(option);
+			}
+		})
 
 	});
 	});
