@@ -10,8 +10,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	countrySpan.children[0].style.cssText = 'width: 0 !important;height: 0 !important;opacity: 0 !important;appearance: none !important';
 	countrySpan.children[1].style.cssText = 'width: 0 !important;height: 0 !important;opacity: 0 !important;appearance: none !important';
-	
-	console.log(countrySpan.children[0]);
 
 	
 	let divError = _document.createElement('div');
@@ -25,9 +23,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	divError.appendChild(errorMessage);
 	
     	nameField.insertBefore(divError, nameField.lastElementChild);
-	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
-	countrySpan.insertBefore(divError, countrySpan.lastElementChild);
-	checkbox.insertBefore(divError, checkbox.lastElementChild);
+// 	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
+// 	countrySpan.insertBefore(divError, countrySpan.lastElementChild);
+// 	checkbox.insertBefore(divError, checkbox.lastElementChild);
 	
 	
 
