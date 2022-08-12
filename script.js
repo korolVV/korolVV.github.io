@@ -21,27 +21,29 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	divError.appendChild(disclaimer);
 	divError.appendChild(errorMessage);
-	
-	divError = divError;
+
 	
 	const divError2 = divError.cloneNode();
+	divError2.appendChild(disclaimer);
+	divError2.appendChild(errorMessage);
 	
-	console.log(divError2);
+	const divError3 = divError.cloneNode();
+	divError3.appendChild(disclaimer);
+	divError3.appendChild(errorMessage);
+	
+	const divError4 = divError.cloneNode();
+	divError4.appendChild(disclaimer);
+	divError4.appendChild(errorMessage);
+	
+	console.log(divError4);
 	
     	nameField.appendChild(divError);
-	emailSpan.appendChild(divError);
-	
-// 	nameField.appendChild(divError);
-// 	nameField.appendChild(divError);
-	
-//  	emailSpan.insertBefore(divError, emailSpan.lastElementChild);
-	
-// 	countrySpan.insertBefore(divError, countrySpan.lastElementChild);
-	
-// 	checkbox.insertBefore(divError, checkbox.lastElementChild);
-	
-	
+	emailSpan.appendChild(divError2);
+	countrySpan.appendChild(divError3);
+	checkbox.appendChild(divError4);
 
+	
+	
 	const nameFieldChildren = nameField.children;
 	const firstName = nameFieldChildren[2];
 	const lastName = nameFieldChildren[3];
