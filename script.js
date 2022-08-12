@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			
 		countryOptions.forEach(option => {
 			if(option.value === item.textContent){
-				option.click();
+				option.selected == true;
 				console.log(option);
 			}
 		})
