@@ -40,14 +40,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	const countryOptions = _document.querySelectorAll('.country option');
-			countryOptions.forEach(option => {
-			console.log(option.value);
-		})
-	console.log('-------------------------------------------------');
+		
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
 	countryLi.forEach((item, i) => {
-		console.log(item.textContent);
 		item.addEventListener("click", () => {
 		countryLi.forEach((items, index) => {
 			if(index !== i){
@@ -67,7 +63,12 @@ window.addEventListener("DOMContentLoaded", () => {
 		country.children[3].classList.toggle('country-list-active');
 		}, 300);
 		
-		
+		countryOptions.forEach(option => {
+			if(option.value === item.textContent){
+				option.click();
+				console.log(option);
+			}
+		})
 	});
 	});
 
