@@ -43,51 +43,51 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
-// 	countryLi.forEach((item, i) => {
-// 		item.addEventListener("click", () => {
-// 		countryLi.forEach((items, index) => {
-// 			if(index !== i){
-// 				items.children[2].classList.remove("checkmark-active");
-// 			}
-// 		});
-// 		item.children[2].classList.add("checkmark-active");
-// 		country.classList.add("country-active");
-// 		countryImg.classList.add("country-img-active");
-// 		country.children[6].classList.toggle("chevron-active");
-// 		placeholderCountry.classList.add("country-span-color-active");
-// 		placeholderChange.textContent = item.children[1].textContent;
-// 		placeholderChange.style.fontWeight = "600";
-// 		placeholderChange.style.fontSize = "16px";
-// 		placeholderChange.style.color = "#26344E";
-// 		setTimeout(function () {
-// 		country.children[4].classList.toggle('country-list-active');
-// 		}, 300);
+	countryLi.forEach((item, i) => {
+		item.addEventListener("click", () => {
+		countryLi.forEach((items, index) => {
+			if(index !== i){
+				items.children[2].classList.remove("checkmark-active");
+			}
+		});
+		item.children[2].classList.add("checkmark-active");
+		country.classList.add("country-active");
+		countryImg.classList.add("country-img-active");
+		country.children[6].classList.toggle("chevron-active");
+		placeholderCountry.classList.add("country-span-color-active");
+		placeholderChange.textContent = item.children[1].textContent;
+		placeholderChange.style.fontWeight = "600";
+		placeholderChange.style.fontSize = "16px";
+		placeholderChange.style.color = "#26344E";
+		setTimeout(function () {
+		country.children[4].classList.toggle('country-list-active');
+		}, 300);
 			
-// 		countryOptions.forEach((option) => {
-// 			if (option.value === item.textContent) {
-// 				option.setAttribute("selected", "selected");
-// 			}
-// 		});
+		countryOptions.forEach((option) => {
+			if (option.value === item.textContent) {
+				option.setAttribute("selected", "selected");
+			}
+		});
 
-// 	});
-// 	});
+	});
+	});
 
 
 // 	Search
 
-// 	countrySearch.addEventListener("input", (e) => {
-// 	countryLi.forEach((item) => {
-// 		if (e.target.value.length > 0) {
-// 			if (item.children[1].textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
-// 				item.style.display = "flex";
-// 			} else {
-// 				item.style.display = "none";
-// 			}
-// 		} else {
-// 			item.style.display = "flex";
-// 		}
-// 	});
-// 	});	
+	countrySearch.addEventListener("input", (e) => {
+	countryLi.forEach((item) => {
+		if (e.target.value.length > 0) {
+			if (item.children[1].textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
+				item.style.display = "flex";
+			} else {
+				item.style.display = "none";
+			}
+		} else {
+			item.style.display = "flex";
+		}
+	});
+	});	
 
 
 
