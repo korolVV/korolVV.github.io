@@ -17,9 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	const lastName = nameFieldChildren[3];
 	
 	
-// 	function insertAfter(newNode, existingNode) {
-//             existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-//         }
+	function insertAfter(newNode, existingNode) {
+            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+      	}
 
         
         let divError = _document.createElement('div');
