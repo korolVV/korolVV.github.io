@@ -43,7 +43,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			countryOptions.forEach(option => {
 			console.log(option.value);
 		})
-	console.log(-------------------------------------------------)
+	console.log('-------------------------------------------------');
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
 	countryLi.forEach((item, i) => {
