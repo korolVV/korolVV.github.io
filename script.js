@@ -70,6 +70,23 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	
+	
+	countrySearch.addEventListener("input", (e) => {
+	countryLi.forEach((item) => {
+		if (e.target.value.length > 0) {
+			if (item.children[1].textContent.includes(e.target.value)) {
+				item.style.display = "flex";
+			} else {
+				item.style.display = "none";
+			}
+		} else {
+			item.style.display = "flex";
+		}
+	});
+	});
+	
+	
+	
 	const inputName = _document.querySelector('#first_name');
 	console.log(inputName);
 	inputName.addEventListener('click', () => {
