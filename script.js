@@ -8,18 +8,22 @@ window.addEventListener("DOMContentLoaded", () => {
 	const checkbox = _document.querySelector('.checkbox>span');
 	
 	
-	let divError = _document.createElement('div');
-	divError.classList.add('error-message');
-	divError.innerHTMl = '<img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />';
-	divError.textContent = 'Wrong name format';
- 	divError.insertAfter(div, nameField);
-
+	function insertAfter(referenceNode, newNode) {
+        	referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+     	}
 	
+
 	emailSpan.children[0].remove();
 	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
 	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 
 	const nameFieldChildren = nameField.children;
+	
+	let divError = _document.createElement('div');
+	divError.classList.add('error-message');
+	divError.innerHTMl = '<img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />';
+	divError.textContent = 'Wrong name format';
+ 	insertAfter(divError, nameFieldChildren);
 	
 	console.log(nameFieldChildren);
 	
