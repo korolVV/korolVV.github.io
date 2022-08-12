@@ -96,16 +96,13 @@ window.addEventListener("DOMContentLoaded", () => {
 	const placeholderFirst = _document.querySelector('#placeholder-first');
 
 	
-	inputName.addEventListener('click', () => {
-		console.log(inputName);
-		console.log('Hello');
+	inputName.addEventListener('blur', () => {
 		if (inputName.value.length >= 1) {
-			console.log('Bye');
-			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
+			inputName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
 			placeholderFirst.style.cssText = "color: #3478F6 !important";
 			inputName.style.cssText = "border-color: #3478F6 !important";
 		} else {
-			firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+			inputName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 			placeholderFirst.style.cssText = "color: #9CABC7 !important";
 			inputName.style.cssText = "border-color: #9CABC7 !important";
 		}
