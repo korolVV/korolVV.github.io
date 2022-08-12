@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			
 		countryOptions.forEach(option => {
 			if(option.value === item.textContent){
-				option.attr("selected", true);
+				option.setAttribute('selected', 'selected');
 				console.log(option);
 			}
 		})
