@@ -30,12 +30,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countrySearch = _document.querySelector(".country-list__search input");
 
 	countryBtn.addEventListener('click', () => {
-	country.children[1].classList.toggle('country-span-active');
+	country.children[2].classList.toggle('country-span-active');
 	setTimeout(function () {
 		country.children[2].classList.toggle('placeholder-change-active');
 	}, 90);
-	country.children[5].classList.toggle("chevron-active");
-	country.children[3].classList.toggle('country-list-active');	
+	country.children[6].classList.toggle("chevron-active");
+	country.children[4].classList.toggle('country-list-active');	
 	});
 	
 	
@@ -53,14 +53,14 @@ window.addEventListener("DOMContentLoaded", () => {
 		item.children[2].classList.add("checkmark-active");
 		country.classList.add("country-active");
 		countryImg.classList.add("country-img-active");
-		country.children[5].classList.toggle("chevron-active");
+		country.children[6].classList.toggle("chevron-active");
 		placeholderCountry.classList.add("country-span-color-active");
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
 		placeholderChange.style.color = "#26344E";
 		setTimeout(function () {
-		country.children[3].classList.toggle('country-list-active');
+		country.children[4].classList.toggle('country-list-active');
 		}, 300);
 		
 		countryOptions.forEach(option => {
