@@ -127,10 +127,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	const email = _document.querySelector('#email');
 	const placeholderEmail = _document.querySelector('#placeholder-email');
 	
-	console.log(email);
-	console.log(placeholderEmail);
-	console.log(emailField.children[2]);
-	
 	email.addEventListener('blur', () => {
 		if (email.value.length >= 1) {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
