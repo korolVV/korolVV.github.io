@@ -98,8 +98,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	console.log(firstName.children[0]);	
 	
 	firstName.children[0].addEventListener('click', () => {
-		e.preventDefault();
-		alert('Hello');
+		console.log('Hello');
 	});
 	
 // 	inputName.addEventListener('click', () => {
