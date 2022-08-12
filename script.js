@@ -63,12 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		country.children[4].classList.toggle('country-list-active');
 		}, 300);
 		
-		countryOptions.forEach(option => {
-			if(option.value === item.textContent){
-				option.click();
-				console.log(option);
-			}
-		})
+
 	});
 	});
 
