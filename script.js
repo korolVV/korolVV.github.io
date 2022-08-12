@@ -164,7 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderReferral.style.cssText = "color: #3478F6 !important";
 			referralInput.style.cssText= "border-color: #3478F6 !important";
 		} else {
-			referralImg.src = "https://sunbirdapp.com/icons/name.svg !important";
+			referralImg.style.backgroundImage = "url(https://sunbirdapp.com/icons/name.svg) !important";
 			placeholderReferral.style.cssText = "color: #9CABC7 !important";
 			referralInput.style.cssText = "border-color: #9CABC7 !important";
 		}
