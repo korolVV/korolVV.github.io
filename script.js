@@ -160,7 +160,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	referralInput.addEventListener('blur', () => {
 		if (referralInput.value.length >= 1) {
-			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-on.svg) !important';
+			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-on.svg)';
 			placeholderReferral.style.cssText = "color: #3478F6 !important";
 			referralInput.style.cssText= "border-color: #3478F6 !important";
 		} else {
