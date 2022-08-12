@@ -6,11 +6,22 @@ window.addEventListener("DOMContentLoaded", () => {
 	const emailField = _document.querySelector('.email .form-item');
 	const country = _document.querySelector('.country');
 	const checkbox = _document.querySelector('.checkbox>span');
+	
+	nameField.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong name format</div>';
+	emailSpan.children[0].remove();
+	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
+	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 
 	const nameFieldChildren = nameField.children;
+	
+	console.log(nameFieldChildren);
+	
 
 	const firstName = nameFieldChildren[2];
 	const lastName = nameFieldChildren[3];
+	
+	console.log(firstName);
+	
 
 	firstName.innerHTML += "<span class=\'placeholder\' id=\'placeholder-first\'>First name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"First name\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
 
