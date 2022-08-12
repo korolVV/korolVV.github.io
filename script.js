@@ -95,7 +95,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const inputName = _document.querySelector('#first_name');
 	const placeholderFirst = _document.querySelector('#placeholder-first');
 
-	inputName.addEventListener('blur', () => {
+	inputName.addEventListener('click', () => {
 		console.log('Hello')
 		if (inputName.value.length >= 1) {
 			console.log('Bye')
