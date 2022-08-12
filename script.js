@@ -7,27 +7,26 @@ window.addEventListener("DOMContentLoaded", () => {
 	const country = _document.querySelector('.country');
 	const checkbox = _document.querySelector('.checkbox>span');
 	
+	let divError = _document.createElement('div');
+	divError.classList.add('error-message');
+	let errorMessage = _document.createTextNode("Wrong name format");
+	let disclaimer = _document.createElement('img');
+	disclaimer.src = "https://sunbirdapp.com/icons/disclaimer.svg";
+	disclaimer.alt = 'error message';
+	
+	divError.appendChild(disclaimer);
+	divError.appendChild(errorMessage);
+	
+        nameField.insertBefore(divError, nameField.lastElementChild);
+	
 
-	emailSpan.children[0].remove();
-	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
-	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
+// 	emailSpan.children[0].remove();
+// 	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
+// 	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 
 	const nameFieldChildren = nameField.children;
 	const firstName = nameFieldChildren[2];
 	const lastName = nameFieldChildren[3];
-	
-	
-	function insertAfter(newNode, existingNode) {
-            existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-      	}
-
-        
-        let divError = _document.createElement('div');
-	divError.classList.add('error-message');
-	divError.innerHTML += '<img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />"Wrong name format"';
-        insertAfter(divError, nameField.lastElementChild);
-	
-	
 
 	firstName.innerHTML += "<span class=\'placeholder\' id=\'placeholder-first\'>First name</span><img src=\"https://sunbirdapp.com/icons/name.svg\" alt=\"First name\" style=\"position:absolute;top: 50%;left: 19px;transform: translateY(-50%)\"/>";
 
