@@ -220,13 +220,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	console.log(invalidEmail);
 	
 	sendBtn.addEventListener('click', () => {
+		setTimeout(function () {
 		if(invalidEmail.classList.contains('hide')){
 			placeholderReferral.style.cssText= "color: #9CABC7";
 		} else {
-			setTimeout(function () {
-				placeholderReferral.style.cssText= "color: #e74e4e";
-			}, 300);
+			placeholderReferral.style.cssText= "color: #e74e4e";
+	
 		}
+		}, 300);
 	});
 
 	
