@@ -222,12 +222,13 @@ window.addEventListener("DOMContentLoaded", () => {
 	sendBtn.addEventListener('click', () => {
 		setTimeout(function () {
 		if(invalidEmail.classList.contains('hide')){
-			placeholderReferral.style.cssText= "color: #9CABC7";
+			return;
 		} else {
 			placeholderReferral.style.cssText= "color: #e74e4e";
-	
+			referralInput.style.cssText = "border-color: #e74e4e";
+			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
 		}
-		}, 300);
+		}, 200);
 	});
 
 	
