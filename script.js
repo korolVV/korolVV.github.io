@@ -25,19 +25,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	
 	const divError2 = divError.cloneNode();
-	const errorMessage2 = errorMessage.cloneNode();
+	const errorMessage2 = _document.createTextNode("Wrong email format");
 	const disclaimer2 = disclaimer.cloneNode();
 	divError2.appendChild(disclaimer2);
 	divError2.appendChild(errorMessage2);
 	
 	const divError3 = divError.cloneNode();
-	const errorMessage3 = errorMessage.cloneNode();
+	const errorMessage3 = _document.createTextNode("Choose country");
 	const disclaimer3 = disclaimer.cloneNode();
 	divError3.appendChild(disclaimer3);
 	divError3.appendChild(errorMessage3);
 	
 	const divError4 = divError.cloneNode();
-	const errorMessage4 = errorMessage.cloneNode();
+	const errorMessage4 = _document.createTextNode("Required");
 	const disclaimer4 = disclaimer.cloneNode();
 	divError4.appendChild(disclaimer4);
 	divError4.appendChild(errorMessage4);
