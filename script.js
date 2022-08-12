@@ -66,8 +66,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		countryOptions.forEach(option => {
 			if(option.value === item.textContent){
 				option.setAttribute('selected', 'selected');
-			}
-		})
+			};
+		});
 
 	});
 	});
