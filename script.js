@@ -96,6 +96,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const placeholderFirst = _document.querySelector('#placeholder-first');
 
 	inputName.addEventListener('click', () => {
+		e.preventDefault();
 		alert('Hello');
 	});
 	
