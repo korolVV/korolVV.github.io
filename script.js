@@ -173,6 +173,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	emailSpan.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
 	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 
+	
+	let dId = "vsscript_";
 	let d = _document.createElement("div");
 	d.id = dId;
 
