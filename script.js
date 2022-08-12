@@ -217,8 +217,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	const sendBtn = _document.querySelector('.submit-refer-friend');
 	const invalidEmail = _document.querySelector('.invalid-email');
 	
-	console.log(invalidEmail);
-	
 	sendBtn.addEventListener('click', () => {
 		setTimeout(function () {
 		if(invalidEmail.classList.contains('hide')){
