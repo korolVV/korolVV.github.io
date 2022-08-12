@@ -174,9 +174,11 @@ window.addEventListener("DOMContentLoaded", () => {
 	checkbox.innerHTML += '<div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Required</div>';
 
 	
-	let dId = "vsscript_";
 	let d = _document.createElement("div");
+	let dId = "vsscript_";
 	d.id = dId;
+	
+	console.log(d);
 
 	let block = _document.createElement("div");
 	block.innerHTML = d;
