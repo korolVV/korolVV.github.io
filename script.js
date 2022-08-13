@@ -133,17 +133,17 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	countryLi.forEach((item, i) => {
 		item.addEventListener("click", () => {
+			countryLi.forEach((items, index) => {
+				if(index !== i){
+					items.children[2].classList.remove("checkmark-active");
+				}
+			});
 		console.log('Hello')
-		countryLi.forEach((items, index) => {
-			if(index !== i){
-				items.children[2].classList.remove("checkmark-active");
-			}
-		});
 		item.children[2].classList.add("checkmark-active");
-		country.style.borderColor = '#3478f6';
-		countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-on.svg)';
+// 		country.style.borderColor = '#3478f6';
+// 		placeholderCountry.style.color = '#3478f6';
+// 		countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-on.svg)';
 		country.children[6].classList.remove("chevron-active");
-		placeholderCountry.style.color = '#3478f6';
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
