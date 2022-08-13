@@ -133,6 +133,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	countryLi.forEach((item, i) => {
 		item.addEventListener("click", () => {
+		console.log('Hello')
 		countryLi.forEach((items, index) => {
 			if(index !== i){
 				items.children[2].classList.remove("checkmark-active");
