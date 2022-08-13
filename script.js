@@ -133,8 +133,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
-	console.log(placeholderCountry);
-	
 	countryLi.forEach((item, i) => {
 		item.addEventListener("click", () => {
 		countryLi.forEach((items, index) => {
@@ -230,7 +228,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderEmail.style.cssText = "color: #e74e4e";
 			email.style.cssText= "border-color: #e74e4e";
 		}
-		if(countrySpan.classList.contains('warning')){
+		if(countrySpan.classList.contains('warning') || placeholderCountry.innerHTML === "Country"){
 			countryWarning.style.display = 'flex';
 			countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-red.svg)';
 			placeholderCountry.style.cssText = "color: #e74e4e";
