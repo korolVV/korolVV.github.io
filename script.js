@@ -125,7 +125,10 @@ window.addEventListener("DOMContentLoaded", () => {
 		}, 300);
 		placeholderCountry.classList.add('country-span-active');
 		country.children[6].classList.add("chevron-active");
-		placeholderChange.style.display = 'block';
+		setTimeout(function () {
+			placeholderChange.style.display = 'block';
+		}, 100);
+		
 	});
 	
 	
