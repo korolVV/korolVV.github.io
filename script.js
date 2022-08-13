@@ -120,7 +120,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countrySearch = _document.querySelector(".country-list__search input");
 
 	countryBtn.addEventListener('click', () => {
-		country.children[4].classList.add('country-list-active');
+		setTimeout(function () {
+			country.children[4].classList.add('country-list-active');
 		}, 300);
 		country.children[6].classList.add("chevron-active");	
 	});
