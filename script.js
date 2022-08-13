@@ -141,10 +141,10 @@ window.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 		item.children[2].classList.add("checkmark-active");
-		country.classList.add("country-active");
-		countryImg.classList.add("country-img-active");
+		country.style.borderColor: '#3478f6';
+		countryImg.style.backgroundImage: 'url(https://sunbirdapp.com/icons/country-on.svg)';
 		country.children[6].classList.toggle("chevron-active");
-		placeholderCountry.classList.add("country-span-color-active");
+		placeholderCountry.style.color = '#3478f6';
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
@@ -312,8 +312,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	inputLast.addEventListener('blur', () => {
 		if (inputLast.value.length >= 1) {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-			placeholderLast.style.cssText = "color: #3478F6 !important";
-			inputLast.style.cssText = "border-color: #3478F6 !important";
+			placeholderLast.style.cssText = "color: #3478F6";
+			inputLast.style.cssText = "border-color: #3478F6";
 		} else {
 			lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 			placeholderLast.style.cssText = "color: #9CABC7";
