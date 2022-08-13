@@ -122,7 +122,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	countryBtn.addEventListener('click', () => {
 		country.children[4].classList.add('country-list-active');
 		}, 300);
-		country.children[6].classList.toggle("chevron-active");	
+		country.children[6].classList.add("chevron-active");	
 	});
 	
 	
@@ -140,7 +140,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		item.children[2].classList.add("checkmark-active");
 		country.style.borderColor = '#3478f6';
 		countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-on.svg)';
-		country.children[6].classList.toggle("chevron-active");
+		country.children[6].classList.remove("chevron-active");
 		placeholderCountry.style.color = '#3478f6';
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
