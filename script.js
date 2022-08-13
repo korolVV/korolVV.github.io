@@ -48,7 +48,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	countrySpan.appendChild(divError3);
 	checkbox.appendChild(divError4);
 	
-	const countryWarning = _document.querySelector('.country .error-message');
 
 	
 	
@@ -157,7 +156,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const joinBtn = _document.querySelector('.promotion .enter_sweeps');
 	const nameWarning = _document.querySelector('.name .error-message');
 	const emailWarning = _document.querySelector('.email .error-message');
-	
+	const countryWarning = _document.querySelector('.country .error-message');
 	const checkboxWarning = _document.querySelector('.checkbox .error-message');
 	
 	joinBtn.addEventListener('click', () => {
@@ -189,7 +188,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		} 
 		if(checkbox.classList.contains('warning')){
 			checkboxWarning.style.display = 'flex';
-			checkbox.chilrden[1].style.cssText = "outline-color: #e74e4e";
+			checkbox.children[1].style.cssText = "outline-color: #e74e4e";
 			setTimeout(function () {checkboxWarning.style.display = 'none';}, 2000);
 		} 
 	});
