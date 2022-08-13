@@ -233,7 +233,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-red.svg)';
 			placeholderCountry.style.cssText = "color: #e74e4e";
 			country.style.cssText= "border-color: #e74e4e; margin-bottom: 36px";
-			setTimeout(function () {countryWarning.style.display = 'none'; country.style.cssText = 'margin-bottom: 0';}, 2000);
+			setTimeout(function () {countryWarning.style.display = 'none'; country.style.cssText = 'border-color: #e74e4e; margin-bottom: 0';}, 2000);
 		} 
 		if(checkbox.classList.contains('warning')){
 			checkboxWarning.style.display = 'flex';
