@@ -160,7 +160,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	const checkboxWarning = _document.querySelector('.checkbox .error-message');
 	
 	joinBtn.addEventListener('click', () => {
-		country.style.marginBottom = '36px';
 		if(nameField.classList.contains('warning')){
 			nameWarning.style.display = 'flex';
 			setTimeout(function () {nameWarning.style.display = 'none';}, 2000);
@@ -178,12 +177,13 @@ window.addEventListener("DOMContentLoaded", () => {
 			emailField.children[2].src = "https://sunbirdapp.com/icons/email-red.svg";
 			placeholderEmail.style.cssText = "color: #e74e4e";
 			email.style.cssText= "border-color: #e74e4e";
-		} 
+		}
 		if(countrySpan.classList.contains('warning')){
+			country.style.marginBottom = '36px';
 			countryWarning.style.display = 'flex';
 			setTimeout(function () {countryWarning.style.display = 'none';}, 2000);
-			country.children[1].src = "https://sunbirdapp.com/icons/country-red.svg";
-			country.children[2].style.cssText = "color: #e74e4e";
+			countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-red.svg)';
+			placeholderCountry.style.cssText = "color: #e74e4e";
 			country.style.cssText= "border-color: #e74e4e";
 		} 
 		if(checkbox.classList.contains('warning')){
@@ -227,8 +227,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	country.addEventListener('click', () => {
-		country.children[1].src = "https://sunbirdapp.com/icons/country.svg";
-		country.children[2].style.cssText = "color: #9CABC7";
+		countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country.svg)';
+		placeholderCountry.style.cssText = "color: #9CABC7";
 		country.style.cssText = "border-color: #9CABC7";
 	
 	});
