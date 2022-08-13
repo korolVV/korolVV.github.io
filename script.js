@@ -158,16 +158,18 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countryWarning = _document.querySelector('.country .error-message');
 	const checkboxWarning = _document.querySelector('.checkbox .error-message');
 	
-	console.log(countryWarning);
-	
 	joinBtn.addEventListener('click', () => {
 		country.style.marginBottom = '36px';
 		if(nameField.classList.contains('warning')){
 			nameWarning.style.display = 'flex';
 			setTimeout(function () {nameWarning.style.display = 'none';}, 2000);
-			emailField.children[2].src = "https://sunbirdapp.com/icons/name-red.svg";
-			placeholderEmail.style.cssText = "color: #e74e4e";
-			email.style.cssText= "border-color: #e74e4e";
+			firstName.children[2].src = "https://sunbirdapp.com/icons/name-red.svg";
+			placeholderFirst.style.cssText = "color: #e74e4e";
+			inputName.style.cssText= "border-color: #e74e4e";
+			
+			lastName.children[2].src = "https://sunbirdapp.com/icons/name-red.svg";
+			placeholderLast.style.cssText = "color: #e74e4e";
+			inputLast.style.cssText = "border-color: #e74e4e";
 		} 
 		if(emailSpan.classList.contains('warning')){
 			emailWarning.style.display = 'flex';
@@ -176,12 +178,13 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderEmail.style.cssText = "color: #e74e4e";
 			email.style.cssText= "border-color: #e74e4e";
 		} 
+		console.log(countrySpan);
 		if(countrySpan.classList.contains('warning')){
 			countryWarning.style.display = 'flex';
 			setTimeout(function () {countryWarning.style.display = 'none';}, 2000);
-			emailField.children[2].src = "https://sunbirdapp.com/icons/country-red.svg";
-			placeholderEmail.style.cssText = "color: #e74e4e";
-			email.style.cssText= "border-color: #e74e4e";
+			country.children[1].src = "https://sunbirdapp.com/icons/country-red.svg";
+			country.children[2].style.cssText = "color: #e74e4e";
+			country.style.cssText= "border-color: #e74e4e";
 		} 
 		if(checkbox.classList.contains('warning')){
 			checkboxWarning.style.display = 'flex';
@@ -220,6 +223,13 @@ window.addEventListener("DOMContentLoaded", () => {
 		emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
 		placeholderEmail.style.cssText = "color: #9CABC7";
 		email.style.cssText = "border-color: #9CABC7";
+	
+	});
+	
+	country.addEventListener('click', () => {
+		country.children[1].src = "https://sunbirdapp.com/icons/country.svg";
+		country.children[2].style.cssText = "color: #9CABC7";
+		country.style.cssText = "border-color: #9CABC7";
 	
 	});
 	referralInput.addEventListener('input', () => {
