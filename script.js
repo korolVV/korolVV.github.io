@@ -111,8 +111,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	country.appendChild(listCountry);
 	country.appendChild(btnCountry);
 	country.appendChild(imgChevron);
-	
-//  	country.innerHTML += "<div class=\"country__img\"></div><span class=\'placeholder\' id=\'placeholder-country\'>Country</span><span class=\"placeholder-change\">Please select...</span><div class=\"country-list\"><div class=\"country-list__search\"><img src=\"https://sunbirdapp.com/icons/search.svg\" alt=\"Search\" /><input type=\"text\" /></div><ul></ul></div><div class=\"country-btn\"></div><img class=\"chevron\" src=\"https://sunbirdapp.com/icons/chevron.svg\" alt=\"arrow-down\" />";
+
 
 	const countryBtn = _document.querySelector('.country-btn');
 	const countryImg = _document.querySelector('.country__img');
