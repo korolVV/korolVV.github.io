@@ -232,7 +232,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		if(countrySpan.classList.contains('warning')){
 			country.style.marginBottom = '36px';
 			countryWarning.style.display = 'flex';
-			setTimeout(function () {countryWarning.style.display = 'none';}, 2000);
+			setTimeout(function () {countryWarning.style.display = 'none'; country.style.marginBottom = '0';}, 2000);
 			countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-red.svg)';
 			placeholderCountry.style.cssText = "color: #e74e4e";
 			country.style.cssText= "border-color: #e74e4e";
