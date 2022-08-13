@@ -225,7 +225,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderEmail.style.cssText = "color: #e74e4e";
 			email.style.cssText= "border-color: #e74e4e";
 		}
-		if(countrySpan.classList.contains('warning') || placeholderCountry.innerHTML === "Country"){
+		if(countrySpan.classList.contains('warning') || placeholderChange.textContent === "Country"){
 			countryWarning.style.display = 'flex';
 			countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-red.svg)';
 			placeholderCountry.style.cssText = "color: #e74e4e";
