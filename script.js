@@ -195,6 +195,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const sendBtn = _document.querySelector('.submit-refer-friend');
 	const invalidEmail = _document.querySelector('.invalid-email');
 	
+	
 	sendBtn.addEventListener('click', () => {
 	setTimeout(function () {
 	if(invalidEmail.classList.contains('hide')){
@@ -203,7 +204,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		placeholderReferral.style.cssText= "color: #e74e4e";
 		referralInput.style.cssText = "border-color: #e74e4e";
 		referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
-		setTimeout(function () {console.log('Hello'); return false;}, 2000);
 	}
 	}, 100);
 	});
@@ -232,9 +232,29 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	const joinBtn = _document.querySelector('.promotion .enter_sweeps');
+	const nameWarning = _document.querySelector('.name .error-message');
+	const emailWarning = _document.querySelector('.email .error-message');
+	const countryWarning = _document.querySelector('.country .error-message');
+	const checkboxWarning = _document.querySelector('.checkbox .error-message');
 	
 	joinBtn.addEventListener('click', () => {
-			country.style.marginBottom = '36px';
+		country.style.marginBottom = '36px';
+		if(nameField.classList.contains('warning')){
+			nameWarning.style.display = 'flex';
+			setTimeout(function () {nameWarning.style.display = 'none';}, 2000);
+		} 
+		if(emailSpan.classList.contains('warning')){
+			emailWarning.style.display = 'flex';
+			setTimeout(function () {emailWarning.style.display = 'none';}, 2000);
+		} 
+		if(countrySpan.classList.contains('warning')){
+			countryWarning.style.display = 'flex';
+			setTimeout(function () {countryWarning.style.display = 'none';}, 2000);
+		} 
+		if(checkbox.classList.contains('warning')){
+			checkboxWarning.style.display = 'flex';
+			setTimeout(function () {checkboxWarning.style.display = 'none';}, 2000);
+		} 
 	});
 	
 	
