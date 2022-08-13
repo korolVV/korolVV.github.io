@@ -129,55 +129,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	});	
 
 
-
-
-	const inputName = _document.querySelector('#first_name');
-	const placeholderFirst = _document.querySelector('#placeholder-first');
-
-	
-	inputName.addEventListener('blur', () => {
-		if (inputName.value.length >= 1) {
-			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-			placeholderFirst.style.cssText = "color: #3478F6 !important";
-			inputName.style.cssText = "border-color: #3478F6 !important";
-		} else {
-			firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
-			placeholderFirst.style.cssText = "color: #9CABC7 !important";
-			inputName.style.cssText = "border-color: #9CABC7 !important";
-		}
-	});
-
-
-	const inputLast = _document.querySelector('#last_name');
-	const placeholderLast = _document.querySelector('#placeholder-last');
-
-	inputLast.addEventListener('blur', () => {
-		if (inputLast.value.length >= 1) {
-			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
-			placeholderLast.style.cssText = "color: #3478F6 !important";
-			inputLast.style.cssText = "border-color: #3478F6 !important";
-		} else {
-			lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
-			placeholderLast.style.cssText = "color: #9CABC7 !important";
-			inputLast.style.cssText = "border-color: #9CABC7 !important";
-		}
-	});
-		
-		
-	const email = _document.querySelector('#email');
-	const placeholderEmail = _document.querySelector('#placeholder-email');
-	
-	email.addEventListener('blur', () => {
-		if (email.value.length >= 1) {
-			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
-			placeholderEmail.style.cssText = "color: #3478F6 !important";
-			email.style.cssText= "border-color: #3478F6 !important";
-		} else {
-			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
-			placeholderEmail.style.cssText = "color: #9CABC7 !important";
-			email.style.cssText = "border-color: #9CABC7 !important";
-		}
-	});
 		
 		
 	let extra = _document.querySelector('.extra');
@@ -188,28 +139,89 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	const referralEmail = _document.querySelector('#referral_email');
 	referralEmail.innerHTML += '<span class=\'placeholder\' id=\'placeholder-referral\'>Enter a friend’s email</span><span class=\"referral-img\"></span><div class=\"error-message\"><img src=\"https://sunbirdapp.com/icons/disclaimer.svg\" alt=\"error message\" />Wrong email format</div>';
-		
+	
+	const inputName = _document.querySelector('#first_name');
+	const placeholderFirst = _document.querySelector('#placeholder-first');
+	const inputLast = _document.querySelector('#last_name');
+	const placeholderLast = _document.querySelector('#placeholder-last');
+	const email = _document.querySelector('#email');
+	const placeholderEmail = _document.querySelector('#placeholder-email');
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
 	const referralImg = _document.querySelector('.referral-img');
 	const sendBtn = _document.querySelector('.submit-refer-friend');
 	const invalidEmail = _document.querySelector('.invalid-email');
+		
+	const joinBtn = _document.querySelector('.promotion .enter_sweeps');
+	const nameWarning = _document.querySelector('.name .error-message');
+	const emailWarning = _document.querySelector('.email .error-message');
+	const countryWarning = _document.querySelector('.country .error-message');
+	const checkboxWarning = _document.querySelector('.checkbox .error-message');
 	
+	console.log(countryWarning);
 	
-	sendBtn.addEventListener('click', () => {
-	setTimeout(function () {
-	if(invalidEmail.classList.contains('hide')){
-		return;
-	} else {
-		placeholderReferral.style.cssText= "color: #e74e4e";
-		referralInput.style.cssText = "border-color: #e74e4e";
-		referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
-	}
-	}, 100);
+	joinBtn.addEventListener('click', () => {
+		country.style.marginBottom = '36px';
+		if(nameField.classList.contains('warning')){
+			nameWarning.style.display = 'flex';
+			setTimeout(function () {nameWarning.style.display = 'none';}, 2000);
+			emailField.children[2].src = "https://sunbirdapp.com/icons/name-red.svg";
+			placeholderEmail.style.cssText = "color: #e74e4e";
+			email.style.cssText= "border-color: #e74e4e";
+		} 
+		if(emailSpan.classList.contains('warning')){
+			emailWarning.style.display = 'flex';
+			setTimeout(function () {emailWarning.style.display = 'none';}, 2000);
+			emailField.children[2].src = "https://sunbirdapp.com/icons/email-red.svg";
+			placeholderEmail.style.cssText = "color: #e74e4e";
+			email.style.cssText= "border-color: #e74e4e";
+		} 
+		if(countrySpan.classList.contains('warning')){
+			countryWarning.style.display = 'flex';
+			setTimeout(function () {countryWarning.style.display = 'none';}, 2000);
+			emailField.children[2].src = "https://sunbirdapp.com/icons/country-red.svg";
+			placeholderEmail.style.cssText = "color: #e74e4e";
+			email.style.cssText= "border-color: #e74e4e";
+		} 
+		if(checkbox.classList.contains('warning')){
+			checkboxWarning.style.display = 'flex';
+			checkbox.chilrden[1].style.cssText = "outline-color: #e74e4e";
+			setTimeout(function () {checkboxWarning.style.display = 'none';}, 2000);
+		} 
 	});
 	
 	
+	sendBtn.addEventListener('click', () => {
+		setTimeout(function () {
+		if(invalidEmail.classList.contains('hide')){
+			return;
+		} else {
+			placeholderReferral.style.cssText= "color: #e74e4e";
+			referralInput.style.cssText = "border-color: #e74e4e";
+			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
+		}
+		}, 100);
+	});
 	
+	
+	inputName.addEventListener('input', () => {
+		firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+		placeholderFirst.style.cssText = "color: #9CABC7";
+		inputName.style.cssText = "border-color: #9CABC7";
+	
+	});
+	inputLast.addEventListener('input', () => {
+		lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+		placeholderLast.style.cssText = "color: #9CABC7";
+		inputLast.style.cssText = "border-color: #9CABC7";
+	
+	});
+	email.addEventListener('input', () => {
+		emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
+		placeholderEmail.style.cssText = "color: #9CABC7";
+		email.style.cssText = "border-color: #9CABC7";
+	
+	});
 	referralInput.addEventListener('input', () => {
 		referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name.svg)';
 		placeholderReferral.style.cssText= "color: #9CABC7";
@@ -217,6 +229,47 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	});
 	
+	
+
+	
+	inputName.addEventListener('blur', () => {
+		if (inputName.value.length >= 1) {
+			firstName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
+			placeholderFirst.style.cssText = "color: #3478F6";
+			inputName.style.cssText = "border-color: #3478F6";
+		} else {
+			firstName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+			placeholderFirst.style.cssText = "color: #9CABC7";
+			inputName.style.cssText = "border-color: #9CABC7";
+		}
+	});
+
+
+
+	inputLast.addEventListener('blur', () => {
+		if (inputLast.value.length >= 1) {
+			lastName.children[2].src = "https://sunbirdapp.com/icons/name-on.svg";
+			placeholderLast.style.cssText = "color: #3478F6 !important";
+			inputLast.style.cssText = "border-color: #3478F6 !important";
+		} else {
+			lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
+			placeholderLast.style.cssText = "color: #9CABC7";
+			inputLast.style.cssText = "border-color: #9CABC7";
+		}
+	});
+		
+	
+	email.addEventListener('blur', () => {
+		if (email.value.length >= 1) {
+			emailField.children[2].src = "https://sunbirdapp.com/icons/email-on.svg";
+			placeholderEmail.style.cssText = "color: #3478F6";
+			email.style.cssText= "border-color: #3478F6";
+		} else {
+			emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
+			placeholderEmail.style.cssText = "color: #9CABC7";
+			email.style.cssText = "border-color: #9CABC7";
+		}
+	});
 		
 	referralInput.addEventListener('blur', () => {
 		if (referralInput.value.length >= 1) {
@@ -230,32 +283,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 	
-	
-	const joinBtn = _document.querySelector('.promotion .enter_sweeps');
-	const nameWarning = _document.querySelector('.name .error-message');
-	const emailWarning = _document.querySelector('.email .error-message');
-	const countryWarning = _document.querySelector('.country .error-message');
-	const checkboxWarning = _document.querySelector('.checkbox .error-message');
-	
-	joinBtn.addEventListener('click', () => {
-		country.style.marginBottom = '36px';
-		if(nameField.classList.contains('warning')){
-			nameWarning.style.display = 'flex';
-			setTimeout(function () {nameWarning.style.display = 'none';}, 2000);
-		} 
-		if(emailSpan.classList.contains('warning')){
-			emailWarning.style.display = 'flex';
-			setTimeout(function () {emailWarning.style.display = 'none';}, 2000);
-		} 
-		if(countrySpan.classList.contains('warning')){
-			countryWarning.style.display = 'flex';
-			setTimeout(function () {countryWarning.style.display = 'none';}, 2000);
-		} 
-		if(checkbox.classList.contains('warning')){
-			checkboxWarning.style.display = 'flex';
-			setTimeout(function () {checkboxWarning.style.display = 'none';}, 2000);
-		} 
-	});
+
 	
 	
 
