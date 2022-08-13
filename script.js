@@ -133,6 +133,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	const countryLi = _document.querySelectorAll('.country-list-card');
 	
+	console.log(placeholderCountry);
+	
 	countryLi.forEach((item, i) => {
 		item.addEventListener("click", () => {
 		countryLi.forEach((items, index) => {
