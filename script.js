@@ -148,7 +148,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-on.svg)';
 		country.children[6].classList.remove("chevron-active");
 		placeholderChange.textContent = item.children[1].textContent;
-		placeholderChange.style.cssText = 'display = block;font-weight = 600; font-size = 16px; color: #26344E';
+		placeholderChange.style.cssText = 'display: block;font-weight: 600; font-size: 16px; color: #26344E';
 		setTimeout(function () {
 		country.children[4].classList.remove('country-list-active');
 		}, 300);
