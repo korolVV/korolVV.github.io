@@ -192,6 +192,30 @@ window.addEventListener("DOMContentLoaded", () => {
 	const referralInput = _document.querySelector('#referral_email input');
 	const placeholderReferral = _document.querySelector('#placeholder-referral');
 	const referralImg = _document.querySelector('.referral-img');
+	const sendBtn = _document.querySelector('.submit-refer-friend');
+	const invalidEmail = _document.querySelector('.invalid-email');
+	
+	sendBtn.addEventListener('click', () => {
+	setTimeout(function () {
+	if(invalidEmail.classList.contains('hide')){
+		return;
+	} else {
+		placeholderReferral.style.cssText= "color: #e74e4e";
+		referralInput.style.cssText = "border-color: #e74e4e";
+		referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
+		setTimeout(function () {console.log('Hello'); return false;}, 2000);
+	}
+	}, 100);
+	});
+	
+	
+	
+	referralInput.addEventListener('input', () => {
+		referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name.svg)';
+		placeholderReferral.style.cssText= "color: #9CABC7";
+		referralInput.style.cssText = "border-color: #9CABC7";
+	
+	});
 	
 		
 	referralInput.addEventListener('blur', () => {
@@ -214,23 +238,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	
-	const sendBtn = _document.querySelector('.submit-refer-friend');
-	const invalidEmail = _document.querySelector('.invalid-email');
-	
-	sendBtn.addEventListener('click', () => {
-		setTimeout(function () {
-		if(invalidEmail.classList.contains('hide')){
-			return;
-		} else {
-			placeholderReferral.style.cssText= "color: #e74e4e";
-			referralInput.style.cssText = "border-color: #e74e4e";
-			referralImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/name-red.svg)';
-			setTimeout(function () {console.log('Hello'); return false;}, 2000);
-		}
-		}, 100);
-	});
 
-	
 	
 	
 	
