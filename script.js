@@ -143,9 +143,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		placeholderChange.textContent = item.children[1].textContent;
 		placeholderChange.style.fontWeight = "600";
 		placeholderChange.style.fontSize = "16px";
-		placeholderChange.style.color = "#26344E";
 		setTimeout(function () {
-		country.children[4].classList.toggle('country-list-active');
+		country.children[4].classList.remove('country-list-active');
 		}, 300);
 			
 		countryOptions.forEach((option) => {
