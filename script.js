@@ -123,10 +123,10 @@ window.addEventListener("DOMContentLoaded", () => {
 		setTimeout(function () {
 			country.children[4].classList.toggle('country-list-active');
 		}, 300);
-		placeholderCountry.classList.add('country-span-active');
-		country.children[6].classList.add("chevron-active");
+		placeholderCountry.classList.toggle('country-span-active');
+		country.children[6].classList.toggle("chevron-active");
 		setTimeout(function () {
-			placeholderChange.style.display = 'block';
+			placeholderChange.classList.toggle('placeholder-change-active');
 		}, 100);
 		
 	});
