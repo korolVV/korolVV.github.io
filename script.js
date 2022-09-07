@@ -350,7 +350,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 
+	const closeToggle = _document.querySelector('.lightbox_close_toggle');
+	const modalWindow = _document.querySelector('.vs_lb_wrapper_115839');
 	
+	closeToggle.addEventListener('click', () => {
+		modalWindow.style.display = "none !important"
+		console.log(document.body.classList);
+		document.body.classList.remove('vs-open');
+	});
 	
 
 	
