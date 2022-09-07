@@ -351,8 +351,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	const closeToggle = _document.querySelector('.lightbox_close_toggle');
 	const modalWindow = document.querySelector('#vs_lb_wrapper_115839');
+	const body = document.getElementByTagName('body');
 	
-	console.log(document.body);
+	console.log(body);
 	
 	closeToggle.addEventListener('click', () => {
 		console.log(modalWindow);
