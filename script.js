@@ -354,6 +354,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const modalWindow = _document.querySelector('.vs_lb_wrapper_115839');
 	
 	closeToggle.addEventListener('click', () => {
+		console.log(modalWindow);
 		modalWindow.style.display = "none !important"
 		console.log(document.body.classList);
 		document.body.classList.remove('vs-open');
