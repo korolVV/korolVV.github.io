@@ -143,7 +143,6 @@ window.addEventListener("DOMContentLoaded", () => {
 					items.children[2].classList.remove("checkmark-active");
 				}
 			});
-		console.log('Hello')
 		item.children[2].classList.add("checkmark-active");
  		country.style.borderColor = '#3478f6';
 		placeholderCountry.style.color = '#3478f6';
