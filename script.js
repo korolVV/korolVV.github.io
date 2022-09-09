@@ -349,23 +349,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 	
-	const closeToggle = _document.querySelector('.lightbox_close_toggle');
-	const modalWindow = document.getElementsByTagName('div');
-	const body = document.querySelector('body');
-	
-	console.log(modalWindow);
-	
-	console.log(body);
-	
-	closeToggle.addEventListener('click', () => {
-		console.log(modalWindow);
-		modalWindow.style.display = "none !important"
-		console.log(document.body.classList);
-		document.body.classList.remove('vs-open');
-	});
-	
 
-	
-	
 	
 });
