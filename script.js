@@ -350,7 +350,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	const closeToggle = _document.querySelector('.lightbox_close_toggle');
-	const modalWindow = document.getElementByTagName('div');
+	const modalWindow = document.getElementsByTagName('div');
 	const body = document.querySelector('body');
 	
 	console.log(modalWindow);
