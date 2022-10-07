@@ -347,9 +347,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			referralInput.style.cssText = "border-color: #9CABC7";
 		}
 	});
-	
-	
-	const operaDetachVideo = _document.querySelectorAll('#detach-button-host');
-	operaDetachVideo.style.display = 'none !important';
+
 	
 });
