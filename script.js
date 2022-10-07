@@ -348,6 +348,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 	
-
+	
+	const operaDetachVideo = _document.querySelectorAll('#detach-button-host');
+	operaDetachVideo.style.display = 'none !important';
 	
 });
