@@ -264,17 +264,56 @@ window.addEventListener("DOMContentLoaded", () => {
 		inputName.style.cssText = "border-color: #9CABC7";
 	
 	});
+	
+	inputName.addEventListener('click', () => {
+		setTimeout(function () {
+			country.children[4].classList.toggle('country-list-active');
+		}, 300);
+		placeholderCountry.classList.toggle('country-span-active');
+		country.children[6].classList.toggle("chevron-active");
+		setTimeout(function () {
+			placeholderChange.classList.toggle('placeholder-change-active');
+		}, 100);
+		
+	});
+	
 	inputLast.addEventListener('input', () => {
 		lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 		placeholderLast.style.cssText = "color: #9CABC7";
 		inputLast.style.cssText = "border-color: #9CABC7";
 	
 	});
+	
+	inputLast.addEventListener('click', () => {
+		setTimeout(function () {
+			country.children[4].classList.toggle('country-list-active');
+		}, 300);
+		placeholderCountry.classList.toggle('country-span-active');
+		country.children[6].classList.toggle("chevron-active");
+		setTimeout(function () {
+			placeholderChange.classList.toggle('placeholder-change-active');
+		}, 100);
+		
+	});
+	
+	
 	email.addEventListener('input', () => {
 		emailField.children[2].src = "https://sunbirdapp.com/icons/email.svg";
 		placeholderEmail.style.cssText = "color: #9CABC7";
 		email.style.cssText = "border-color: #9CABC7";
 	
+	});
+	
+	email.addEventListener('click', () => {
+		setTimeout(function () {
+			country.children[4].classList.toggle('country-list-active');
+		}, 300);
+		placeholderCountry.classList.toggle('country-span-active');
+		country.children[6].classList.toggle("chevron-active");
+		setTimeout(function () {
+			placeholderChange.classList.toggle('placeholder-change-active');
+		}, 100);
+		
 	});
 	
 // 	country.addEventListener('click', () => {
