@@ -132,6 +132,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	
+	window.addEventListener('click', function(e) {
+  		const allModals = document.querySelector('.country-list-active');
+  		if (!e.path.some(x => x.className && x.className.includes('country-list-active'))) {
+    		allModals.forEach(x => x.style.display = 'none');
+  		}
+	}, true)
+	
+	
 	const countryOptions = _document.querySelectorAll('.country option');
 		
 	const countryLi = _document.querySelectorAll('.country-list-card');
@@ -275,14 +283,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	});
 	
-	const promotionBlock = _document.querySelector('.promotion');
-	
-	promotionBlock.addEventListener('click', () => {
-		country.children[4].classList.remove('country-list-active');
-		placeholderCountry.classList.remove('country-span-active');
-		country.children[6].classList.remove("chevron-active");
-		placeholderChange.classList.remove('placeholder-change-active');
-	});
 	
 	inputLast.addEventListener('input', () => {
 		lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
