@@ -118,7 +118,18 @@ window.addEventListener("DOMContentLoaded", () => {
 	const placeholderCountry = _document.querySelector('#placeholder-country');
 	const placeholderChange = _document.querySelector('.placeholder-change');
 	const countrySearch = _document.querySelector(".country-list__search input");
-
+	
+	
+	window.parent.addEventListener('click', function(e) {
+  		if(!e.target.closest('.country-list-active')){
+			country.children[4].classList.remove('country-list-active');
+			placeholderCountry.classList.remove('country-span-active');
+			country.children[6].classList.remove("chevron-active");
+			placeholderChange.classList.remove('placeholder-change-active');
+		};
+	});
+	
+	
 	countryBtn.addEventListener('click', () => {
 		setTimeout(function () {
 			country.children[4].classList.toggle('country-list-active');
@@ -129,16 +140,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			placeholderChange.classList.toggle('placeholder-change-active');
 		}, 100);
 		
-	});
-	
-	
-	window.parent.addEventListener('click', function(e) {
-  		if(!e.target.closest('.country-list-active')){
-			country.children[4].classList.remove('country-list-active');
-			placeholderCountry.classList.remove('country-span-active');
-			country.children[6].classList.remove("chevron-active");
-			placeholderChange.classList.remove('placeholder-change-active');
-		};
 	});
 	
 	
