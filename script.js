@@ -135,6 +135,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	window.parent.addEventListener('click', function(e) {
   		if(!e.target.closest('.country-list-active')){
 			country.children[4].classList.remove('country-list-active');
+			placeholderCountry.classList.remove('country-span-active');
+			country.children[6].classList.remove("chevron-active");
+			placeholderChange.classList.remove('placeholder-change-active');
 		};
 	});
 	
