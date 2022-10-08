@@ -146,7 +146,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		item.children[2].classList.add("checkmark-active");
  		country.style.borderColor = '#3478f6';
 		placeholderCountry.style.color = '#3478f6';
- 		placeholderCountry.classList.add('country-span-active');
+ 		placeholderCountry.classList.add('country-span-active-always');
 		countryImg.style.backgroundImage = 'url(https://sunbirdapp.com/icons/country-on.svg)';
 		country.children[6].classList.remove("chevron-active");
 		placeholderChange.textContent = item.children[1].textContent;
