@@ -275,6 +275,15 @@ window.addEventListener("DOMContentLoaded", () => {
 		
 	});
 	
+	const promotionBlock = _document.querySelector('.promotion');
+	
+	promotionBlock.addEventListener('click', () => {
+		country.children[4].classList.remove('country-list-active');
+		placeholderCountry.classList.remove('country-span-active');
+		country.children[6].classList.remove("chevron-active");
+		placeholderChange.classList.remove('placeholder-change-active');
+	});
+	
 	inputLast.addEventListener('input', () => {
 		lastName.children[2].src = "https://sunbirdapp.com/icons/name.svg";
 		placeholderLast.style.cssText = "color: #9CABC7";
