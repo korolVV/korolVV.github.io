@@ -267,12 +267,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	inputName.addEventListener('click', () => {
 		setTimeout(function () {
-			country.children[4].classList.toggle('country-list-active');
+			country.children[4].classList.remove('country-list-active');
 		}, 300);
-		placeholderCountry.classList.toggle('country-span-active');
-		country.children[6].classList.toggle("chevron-active");
+		placeholderCountry.classList.remove('country-span-active');
+		country.children[6].classList.remove("chevron-active");
 		setTimeout(function () {
-			placeholderChange.classList.toggle('placeholder-change-active');
+			placeholderChange.classList.remove('placeholder-change-active');
 		}, 100);
 		
 	});
@@ -286,12 +286,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	inputLast.addEventListener('click', () => {
 		setTimeout(function () {
-			country.children[4].classList.toggle('country-list-active');
+			country.children[4].classList.remove('country-list-active');
 		}, 300);
-		placeholderCountry.classList.toggle('country-span-active');
-		country.children[6].classList.toggle("chevron-active");
+		placeholderCountry.classList.remove('country-span-active');
+		country.children[6].classList.remove("chevron-active");
 		setTimeout(function () {
-			placeholderChange.classList.toggle('placeholder-change-active');
+			placeholderChange.classList.remove('placeholder-change-active');
 		}, 100);
 		
 	});
@@ -306,12 +306,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	email.addEventListener('click', () => {
 		setTimeout(function () {
-			country.children[4].classList.toggle('country-list-active');
+			country.children[4].classList.remove('country-list-active');
 		}, 300);
-		placeholderCountry.classList.toggle('country-span-active');
-		country.children[6].classList.toggle("chevron-active");
+		placeholderCountry.classList.remove('country-span-active');
+		country.children[6].classList.remove("chevron-active");
 		setTimeout(function () {
-			placeholderChange.classList.toggle('placeholder-change-active');
+			placeholderChange.classList.remove('placeholder-change-active');
 		}, 100);
 		
 	});
