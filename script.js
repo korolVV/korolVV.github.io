@@ -133,11 +133,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	window.parent.addEventListener('click', function(e) {
-  		const allModals = _document.querySelectorAll('.country-list-active');
-  		if (!e.path.some(x => x.className && x.className.includes('country-list-active'))) {
-    		allModals.forEach(x => x.style.display = 'none');
-  		}
-	}, true)
+  		if(!e.target.closest('.country-list-active')){
+			country.children[4].classList.remove('country-list-active');
+		};
+	});
 	
 	
 	const countryOptions = _document.querySelectorAll('.country option');
