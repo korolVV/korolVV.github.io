@@ -266,14 +266,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	inputName.addEventListener('click', () => {
-		setTimeout(function () {
-			country.children[4].classList.remove('country-list-active');
-		}, 300);
+
+		country.children[4].classList.remove('country-list-active');
 		placeholderCountry.classList.remove('country-span-active');
 		country.children[6].classList.remove("chevron-active");
-		setTimeout(function () {
-			placeholderChange.classList.remove('placeholder-change-active');
-		}, 100);
+		placeholderChange.classList.remove('placeholder-change-active');
+
 		
 	});
 	
@@ -285,14 +283,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	inputLast.addEventListener('click', () => {
-		setTimeout(function () {
-			country.children[4].classList.remove('country-list-active');
-		}, 300);
+		country.children[4].classList.remove('country-list-active');
 		placeholderCountry.classList.remove('country-span-active');
 		country.children[6].classList.remove("chevron-active");
-		setTimeout(function () {
-			placeholderChange.classList.remove('placeholder-change-active');
-		}, 100);
+		placeholderChange.classList.remove('placeholder-change-active');
 		
 	});
 	
@@ -305,14 +299,10 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 	
 	email.addEventListener('click', () => {
-		setTimeout(function () {
-			country.children[4].classList.remove('country-list-active');
-		}, 300);
+		country.children[4].classList.remove('country-list-active');
 		placeholderCountry.classList.remove('country-span-active');
 		country.children[6].classList.remove("chevron-active");
-		setTimeout(function () {
-			placeholderChange.classList.remove('placeholder-change-active');
-		}, 100);
+		placeholderChange.classList.remove('placeholder-change-active');
 		
 	});
 	
