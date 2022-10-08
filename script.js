@@ -120,14 +120,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	const countrySearch = _document.querySelector(".country-list__search input");
 	
 	
-	window.parent.addEventListener('click', function(e) {
-  		if(!e.target.closest('.country-btn') || !e.target.closest('.country-list__search input') || !e.target.closest('.country-list-active')){
-			country.children[4].classList.remove('country-list-active');
-			placeholderCountry.classList.remove('country-span-active');
-			country.children[6].classList.remove("chevron-active");
-			placeholderChange.classList.remove('placeholder-change-active');
-		};
-	});
+// 	window.parent.addEventListener('click', function(e) {
+//   		if(!e.target.closest('.country-btn') || !e.target.closest('.country-list__search input') || !e.target.closest('.country-list-active')){
+// 			country.children[4].classList.remove('country-list-active');
+// 			placeholderCountry.classList.remove('country-span-active');
+// 			country.children[6].classList.remove("chevron-active");
+// 			placeholderChange.classList.remove('placeholder-change-active');
+// 		};
+// 	});
 	
 	
 	countryBtn.addEventListener('click', () => {
