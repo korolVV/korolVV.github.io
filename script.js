@@ -133,9 +133,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	
 	
 	window.parent.addEventListener('click', function(e) {
-  		const allModals = _document.querySelector('.country-list-active');
+  		const allModals = _document.querySelectorAll('.country-list-active');
   		if (!e.path.some(x => x.className && x.className.includes('country-list-active'))) {
-    		allModals.style.display = 'none';
+    		allModals.forEach(x => x.style.display = 'none');
   		}
 	}, true)
 	
